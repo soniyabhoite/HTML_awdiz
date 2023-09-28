@@ -1,33 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soniya_Bhoite_Resume</title>
+    <style>
+        aside {
+            width: 25%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: left;
+            font-style: italic;
+            background-color: rgb(243, 239, 239);
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 4px 2px;
+            border-radius: 45%;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    <div id="main" style="border: 2px;border-color: blueviolet;height: auto;width: 500px;">
-        <header> 
-            <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/share.svg" alt="share" class="btn-img">
-                SHARE</button>
-            <nav class="collapsible-nav" id="collapsible-nav">
-                <a href="index.html" class="nav-link active">HOME</a>
-                <a href="resume.html" class="nav-link">RESUME</a>
-                <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
-                <a href="blog.html" class="nav-link">BLOG</a>
-                <a href="contact.html" class="nav-link">CONTACT</a>
-            </nav>
-            <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
-                data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
-        </div>
-    </header>
-       
-        <div class="body">
-           content
-        </div>
-        <div class="footer">
-            footer
-        </div>
+    <div class="main">
+        <header>
+            <a href="index.html">SHARE</a>
+            <a href="index.html">HOME</a>
+            <a href="resume.html">RESUME</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="blog.html">BLOG</a>
+            <a href="contact.html">CONTACT</a>
+        </header>
+        <aside>
+            <img style="padding-left: 20px;" height="100px" width="100px" src="profile.jpg" alt="profile photo">
+            <h2 style="padding-left: 20px;">Soniya Bhoite</h2>
+            <div style="padding-left: 20px;" class="text-center">
+                <button class="button button1">Software Engineer</button>
+            </div>
+            <img style="padding-left: 20px;" height="30px" width="30px" src="phone.png" alt="profile photo">
+            <img style="padding-left: 20px;" height="30px" width="30px" src="linkedin.png" alt="profile photo">
+            <img style="padding-left: 20px;" height="30px" width="30px" src="whatsapp.png" alt="profile photo">
+            <img style="padding-left: 20px;" height="30px" width="30px" src="email.png" alt="profile photo">
+            <div class="widget">
+                <h2 >personal information</h2>
+                <div class="widget-content">
+                    <p>BIRTHDAY : 26 September 1995</p>
+                    <p>WEBSITE : www.example.com</p>
+                    <p>PHONE : +91 8805940005</p>
+                    <p>MAIL : soniyabhoite223@gmail.com</p>
+                    <p>Location : 
+                       
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.896251003396!2d73.00029137406219!3d19.112206850837183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c12432d95e0d%3A0xa63ba1a4e5712ac7!2sKoyna%20Society!5e0!3m2!1sen!2sin!4v1695882922200!5m2!1sen!2sin" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button class="btn btn-download-cv btn-primary rounded-pill"> <img src="assets/images/download.svg" alt="download"
+                        class="btn-img">DOWNLOAD CV </button>
+                        </div>
+        </aside>
+        
+        <footer>
+
+        </footer>
     </div>
 </body>
+
 </html>
