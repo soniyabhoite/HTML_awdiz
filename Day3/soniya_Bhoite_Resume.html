@@ -6,7 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soniya_Bhoite_Resume</title>
     <style>
+        body {
+            margin: 0;
+            font-family: "Mukta", sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #000000;
+            text-align: left;
+            background-color: #f3f3f3;
+        }
+
         aside {
+            text-align: center;
+            margin-bottom: 28px;
             width: 25%;
             padding-left: 15px;
             margin-left: 15px;
@@ -39,6 +52,171 @@
             background-color: #4CAF50;
             color: white;
         }
+
+        .profile {
+            border-radius: 50%;
+            vertical-align: middle;
+
+        }
+
+        aside .widget {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        aside .widget .widget-title {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        aside .widget .widget-content {
+            font-size: 13px;
+        }
+
+        aside .widget .widget-content p {
+            margin-bottom: 5px;
+        }
+
+        aside .widget .widget-content p:last-of-type {
+            margin-bottom: 10px;
+        }
+
+        aside .widget.card {
+            background-color: white;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
+        }
+
+        aside .widget.card .widget-title {
+            color: #0067f6;
+        }
+
+        main {
+            padding: 36px 100px 50px 24px;
+            background-color: #ffffff;
+            border-top-right-radius: 10px;
+            flex-grow: 1;
+            display: block;
+            
+        }
+
+        main .intro-section .section-title {
+            margin-bottom: 1rem;
+        }
+
+        main .section-title {
+            font-size: 25px;
+            line-height: 1;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 2.125rem;
+        }
+        main .resume-section {
+    margin-bottom: 47px;
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-lg-6{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+main .section-subtitle {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    color: #0067f6;
+}
+main .section-title {
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2.125rem;
+}
+
+main .time-line {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 24px;
+}
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+main .time-line-item {
+    line-height: 0;
+    padding-left: 40px;
+    padding-bottom: 24px;
+    position: relative;
+}
+main .time-line-item .badge {
+    padding: 6px 10px;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+.badge-primary {
+    color: #ffffff;
+    background-color: #0067f6;
+}
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+main .time-line-item-subtitle {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #a7a7a7;
+    margin-bottom: 3px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
     </style>
 </head>
 
@@ -52,35 +230,142 @@
             <a href="blog.html">BLOG</a>
             <a href="contact.html">CONTACT</a>
         </header>
-        <aside>
-            <img style="padding-left: 20px;" height="100px" width="100px" src="profile.jpg" alt="profile photo">
+        <aside style="padding-right: 10px;">
+            <img class="profile"  height="100px" width="99px" src="profile.jpg"
+                alt="profile photo">
             <h2 style="padding-left: 20px;">Soniya Bhoite</h2>
             <div style="padding-left: 20px;" class="text-center">
                 <button class="button button1">Software Engineer</button>
             </div>
-            <img style="padding-left: 20px;" height="30px" width="30px" src="phone.png" alt="profile photo">
-            <img style="padding-left: 20px;" height="30px" width="30px" src="linkedin.png" alt="profile photo">
-            <img style="padding-left: 20px;" height="30px" width="30px" src="whatsapp.png" alt="profile photo">
-            <img style="padding-left: 20px;" height="30px" width="30px" src="email.png" alt="profile photo">
+            <img style="padding-left: 20px;" height="40px" width="47px" src="phone.png" alt="profile photo">
+            <img style="padding-left: 20px;" height="40px" width="47px" src="linkedin.png" alt="profile photo">
+            <img style="padding-left: 20px;" height="40px" width="47px" src="whatsapp.png" alt="profile photo">
+            <img style="padding-left: 20px;" height="40px" width="47px" src="email.png" alt="profile photo">
             <div class="widget">
-                <h2 >personal information</h2>
+                <h2>personal information</h2>
                 <div class="widget-content">
                     <p>BIRTHDAY : 26 September 1995</p>
                     <p>WEBSITE : www.example.com</p>
                     <p>PHONE : +91 8805940005</p>
                     <p>MAIL : soniyabhoite223@gmail.com</p>
-                    <p>Location : 
-                       
-                    </p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.896251003396!2d73.00029137406219!3d19.112206850837183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c12432d95e0d%3A0xa63ba1a4e5712ac7!2sKoyna%20Society!5e0!3m2!1sen!2sin!4v1695882922200!5m2!1sen!2sin" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <button class="btn btn-download-cv btn-primary rounded-pill"> <img src="assets/images/download.svg" alt="download"
-                        class="btn-img">DOWNLOAD CV </button>
-                        </div>
-        </aside>
-        
-        <footer>
+                    <p>Location :
 
-        </footer>
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.896251003396!2d73.00029137406219!3d19.112206850837183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c12432d95e0d%3A0xa63ba1a4e5712ac7!2sKoyna%20Society!5e0!3m2!1sen!2sin!4v1695882922200!5m2!1sen!2sin"
+                        width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </br>
+
+                    <span style="text-align:center;display: inline;padding-top: 50px;"> DOWNLOAD CV
+                        <img style="padding-left:10px ;vertical-align: middle;
+                        " height="40px" width="40px" src="download.png" alt="download" class="btn-img">
+                    </span>
+                </div>
+                <div class="widget card">
+                    <div class="card-body">
+                        <div class="widget-content">
+                            <h5 class="widget-title card-title">LANGUAGES</h5>
+                            <p>English : Intermediate</p>
+                            <p>Hindi : fluent</p>
+                            <p>Marathi : fluent</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget card">
+                    <div class="card-body">
+                        <div class="widget-content">
+                            <h5 class="widget-title card-title">LANGUAGES</h5>
+                            <p>English : Intermediate</p>
+                            <p>Hindi : fluent</p>
+                            <p>Marathi : fluent</p>
+                        </div>
+                    </div>
+                </div>
+        </aside>
+        <main style="padding-left: 100px;">
+            <section class="intro-section">
+                <h2 class="section-title">Hello, Soniya Bhoite!</h2>
+                <p>I'm Software Engineer from Navi Mumbai, India, working in web development . I enjoy turning complex
+                    problems into simple, beautiful and intuitive designs. My job is to
+                    build your website so that it is functional and user-friendly but at the same time attractive.
+                    Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use.
+                    My aim is to bring across your message and identity in the most creative way.
+                </p>
+                <a href="#!" class="btn btn-primary btn-hire-me">HIRE ME</a>
+            </section>
+            <section class="resume-section">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h6 class="section-subtitle">RESUME</h6>
+                        <h2 class="section-title">EDUCATION</h2>
+                        <ul class="time-line">
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2016 - 2018</span>
+                                <h5 class="time-line-item-title">Master In Computer Science</h5>
+                                <p class="time-line-item-subtitle">PUNE UNIVERSITY</p>
+                                <p class="time-line-item-content">83.3%</p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2013 - 2016</span>
+                                <h5 class="time-line-item-title">Bachelor In Computer Science</h5>
+                                <p class="time-line-item-subtitle">SHIVAJI UNIVERSITY</p>
+                                <p class="time-line-item-content">86.00%
+                                </p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2013</span>
+                                <h5 class="time-line-item-title">HSC</h5>
+                                <p class="time-line-item-subtitle">MAHARASHTRA BOARD</p>
+                                <p class="time-line-item-content">68.00%
+                                </p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2011</span>
+                                <h5 class="time-line-item-title">SSC</h5>
+                                <p class="time-line-item-subtitle">MAHARASHTRA BOARD</p>
+                                <p class="time-line-item-content">88.60%
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h6 class="section-subtitle">RESUME</h6>
+                        <h2 class="section-title">Experience</h2>
+                        <ul class="time-line">
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2010 - 2014</span>
+                                <h6 class="time-line-item-title">UI/UX Designer</h6>
+                                <p class="time-line-item-subtitle">Web Agency</p>
+                                <p class="time-line-item-content">Mauris magna sapien, pharetra consectetur fringilla
+                                    vitae, interdum sed
+                                    tortor.</p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2008 - 2010</span>
+                                <h6 class="time-line-item-title">Web Designer</h6>
+                                <p class="time-line-item-subtitle">Apple Inc.</p>
+                                <p class="time-line-item-content">Mauris magna sapien, pharetra consectetur fringilla
+                                    vitae, interdum sed
+                                    tortor.
+                                </p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2006 - 2008</span>
+                                <h6 class="time-line-item-title">Graphic Designer</h6>
+                                <p class="time-line-item-subtitle">Apple Inc.</p>
+                                <p class="time-line-item-content">Mauris magna sapien, pharetra consectetur fringilla
+                                    vitae, interdum sed
+                                    tortor.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+</div>
+            <footer>
+
+            </footer>
+        </main>
     </div>
 </body>
 
