@@ -1,0 +1,12 @@
+.testingExternalcss
+{
+    font-size: 25px;
+    color: brown;
+}
+h2{
+    opacity: 0.2;
+}
+.imgtag
+{
+    background-image: url('./../Images/1.jpg');
+}
