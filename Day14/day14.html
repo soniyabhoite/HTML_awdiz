@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        #first,#second,#third{
+            border: 2px solid blue;
+            width:30%
+
+        }
+        #parent2{
+            margin-top: 10px;
+            border: 2px solid rgb(238, 164, 66);
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+        #parent3{
+            margin-top: 10px;
+            border: 2px solid rgb(118, 231, 73);
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        #parent4{
+            margin-top: 10px;
+            border: 2px solid rgb(43, 169, 219);
+            display: flex;
+            /* justify-content: space-around; */
+            width: 100%;
+        }
+        #parent5{
+            margin-top: 10px;
+            border: 2px solid rgb(119, 238, 108);
+            display: flex;
+            /* justify-content: space-around; */
+            width: 100%;
+            flex-direction: column;
+        }
+        #parent6{
+            margin-top: 10px;
+            border: 2px solid rgb(231, 55, 202);
+            display: flex;
+            /* justify-content: space-around; */
+            width: 100%;
+            flex-direction:row-reverse;
+        }
+        #parent7{
+            margin-top: 10px;
+            border: 2px solid rgb(19, 223, 30);
+            display: flex;
+            /* justify-content: space-around; */
+            width: 100%;
+            flex-direction:column-reverse;
+        }
+        #parent8{
+            margin-top: 10px;
+            border: 2px solid rgb(218, 43, 72);
+            display: flex;
+            /* justify-content: space-around; */
+            width: 100%;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        #parent9{
+            margin-top: 10px;
+            border: 2px solid rgb(218, 43, 72);
+            display: flex;
+            /* justify-content: space-around; */
+            width: 100%;
+            justify-content: space-evenly;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="first">space-between</div>
+        <div id="second">space-between</div>
+        <div id="third">space-between</div>
+    </div>
+    <div id="parent2">
+        <div id="first">space-evenly</div>
+        <div id="second">space-evenly</div>
+        <div id="third">space-evenly</div>
+    </div>
+    <div id="parent3">
+        <div id="first">space-around</div>
+        <div id="second">space-around</div>
+        <div id="third">space-around</div>
+    </div>
+    <h2>display flex row e.g</h2>
+    <div id="parent4">
+       
+        <div id="first">1</div>
+        <div id="second">2</div>
+        <div id="third">3</div>
+    </div>
+    <h2>display flex row reverse e.g</h2>
+    <div id="parent6">
+       
+        <div id="first">1</div>
+        <div id="second">2</div>
+        <div id="third">3</div>
+    </div>
+    <h2>display flex column e.g</h2>
+    <div id="parent5">
+       
+        <div id="first">1</div>
+        <div id="second">2</div>
+        <div id="third">3</div>
+    </div>
+    <h2>display flex column  reverse e.g</h2>
+    <div id="parent7">
+       
+        <div id="first">1</div>
+        <div id="second">2</div>
+        <div id="third">3</div>
+    </div>
+    <h2>display flex no wrap e.g</h2>
+    <div id="parent9">
+       
+        <div id="first">1</div>
+        <div id="second">2</div>
+        <div id="third">3</div>
+        <div id="first">4</div>
+        <div id="second">5</div>
+        <div id="third">6</div>
+        <div id="first">7</div>
+        <div id="second">8</div>
+        <div id="third">9</div>
+    </div>
+    <h2>display flex wrap e.g</h2>
+    <div id="parent8">
+       
+        <div id="first">1</div>
+        <div id="second">2</div>
+        <div id="third">3</div>
+        <div id="first">4</div>
+        <div id="second">5</div>
+        <div id="third">6</div>
+        <div id="first">7</div>
+        <div id="second">8</div>
+        <div id="third">9</div>
+    </div>
+    
+
+    
+</body>
+</html>
