@@ -1,64 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index page</title>
     <script src="https://kit.fontawesome.com/aaa593ce74.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aaa593ce74.js" crossorigin="anonymous"></script>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        #screen{
-            max-width: 100%;
-            border: 5px solid black;
-            font-family: 'OnePlus Sans Regular','Helvetica Neue',Helvetica,Arial,sans-serif,system-ui;
-        }
-        #header{
+
+        .w-h-100 {
+            height: 100%;
             width: 100%;
-            height: 60px;
-            border: 2px solid green;
         }
-        #nav-one{
+
+        #screen {
+            max-width: 100%;
+            /* border: 5px solid black; */
+            font-family: 'OnePlus Sans Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+        }
+
+        #header {
+            max-width: 100%;
+
+            
+            /* height: 80px; */
+            /* border: 2px solid green; */
+        }
+
+        #nav-one {
             background-color: black;
             color: white;
             text-align: center;
             display: flex;
-            height:30px;
+            height: 40px;
             font-size: 16px;
-            padding-top: 3px;
+            padding-top: 20px;
             justify-content: space-evenly;
         }
-        #nav-one>p:nth-child(1)
-        {
-            width:22%;
+
+        #nav-one>p:nth-child(1) {
+            width: 22%;
         }
-        #nav-one>P:nth-child(2)
-        {
-            width:50%;
+
+        #nav-one>P:nth-child(2) {
+            width: 50%;
         }
-        #nav-one>p:nth-child(3)
-        {
+
+        #nav-one>p:nth-child(3) {
             width: 22%;
             /* padding-right: 0; */
             text-align: right;
         }
-        #body1{
-            width:100%;
-            height:auto;
-            border:2px solid blue;
+
+        #nav-two {
+            height: 40px;
+            color: black;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            font-size: 15px;
+            padding-top: 15px;
+
+        }
+
+        #nav-two>div {
+            width: 45%;
+            /* border: 2px solid red; */
+        }
+
+        #nav-two-one-one>img {
+            width: 100px;
+
+            height: 40px;
+        }
+
+        #nav-two>div:nth-child(1) {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+
+        #nav-two>div:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+
+        #body1 {
+            width: 100%;
+            /* height:auto; */
+            /* border: 2px solid blue; */
+
+
+        }
+
+        #slider {
+            width: 100%;
+            /* background-image: url("./../Images/diwali_lunch-desktop.jpg.thumb.webp"); */
+            height: 480px;
+            /* object-fit: cover; */
+            position: relative;
+            text-align: center;
+            color: rgb(31, 24, 24);
+
+            /* margin-left: -50px; */
+        }
+
+        .top-left-one {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+        }
+
+        .top-left-two {
+            position: absolute;
+            font-size: 40px;
+            top: 40px;
+            left: 30px;
+        }
+
+        .top-bottom {
+            position: absolute;
+
+            top: 400px;
+            left: 30px;
+
+        }
+
+        .info-top-bottom {
+            position: absolute;
+
+            top: 980px;
+            left: 100px;
+
+        }
+
+        #slider>img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+        }
+
+        #mobile-ad {
+            max-width: 100%;
+            border: 2px solid red;
+            height:500px;
+ 
             
 
         }
-        #footer1{
-            width:100%;
-            height:200px;
+        #mobile-ad>div{
+            max-width: 90%;
+            border:2px solid black;
+            height:400px;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        #mobile-ad>div>div:nth-child(1)
+        {
+            border: 2px solid green;
+            width:350px;
+            height:100%;
+        }
+        #mobile-ad>div>div:nth-child(2)
+        {
+            border: 2px solid green;
+            width:800px;
+            height:100%;
+
+        }
+        #mobile-ad>div>div>img:nth-child(2)
+        {
+            object-fit: cover;
+        }
+        #mobile-ad>div>div:nth-child(2)>img:hover{
+            scale: 1.05;
+        }
+        
+
+        #footer1 {
+            width: 100%;
+            height: 200px;
             border: 2px solide green;
         }
-
     </style>
 </head>
+
 <body>
     <div id="screen">
         <div id="header">
@@ -68,14 +204,68 @@
                 <p><i class="fa-solid fa-x"></i></p>
             </div>
             <div id="nav-two">
-                <img src="./../Images/OnePlus-Logo.png" alt="logo" style="height: 30px;width: 60px;">
+                <div>
+                    <div>
+                        <img class="w-h-100" src="./../Images/oneplus-wordmark-4.svg" alt="logo"
+                            style="height: 23px;width:100px;padding-top: -10px;">
+                    </div>
+                    <div>Phone</div>
+                    <div>TV & Display</div>
+                    <div>Audio & Watch</div>
+                    <div>Tablet</div>
+                    <div>Accessories</div>
+                    <div>Offers</div>
+                </div>
+                <div>
+                    <div>Store</div>
+                    <div>OneTopia</div>
+                    <div>OnePlus Featuring</div>
+                    <div>Community</div>
+                    <div>Support</div>
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div><i class="fa-regular fa-user"></i></div>
+
+                </div>
+
             </div>
         </div>
-        <div id="body1">body
-           
+        <div id="body1">
+            <div id="slider">
+                <img class="w-h-100" src="./../Images/diwali_lunch-desktop.jpg.thumb.webp">
+                <div>
+                    <div class="top-left-one">With those who Matter</div>
+                    <div class="top-left-two"> #One Celebration</div>
+                </div>
+                <div>
+                    <div class="top-bottom">
+                        <button style="width:100px;height: 40px;background-color: black;color: white;">Buy Now</button>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div id="mobile-ad">
+                <div>
+                    <div><P>OnePlus Nord CE3 5G</P>
+                        <p>Save ₹2 000 with coupon. Save up to ₹1000 with RedCoins.
+
+                        </p>
+                        <div>From ₹22 999*</div>
+                        <div>*Incl. bank discount
+                        </div>
+                        <div class="info-top-bottom"><button
+                            style="width:100px;height: 40px;background-color: black;color: white;">Buy Now</button>
+                            <button style="width:100px;height: 40px;background-color: rgb(212, 203, 203);color: white;">Learn More</button>
+                    </div>
+                    </div>
+                    <div><img class="w-h-100" src="./../Images/01-pc.jpg.thumb.webp" alt=""></div>
+                </div>
+            </div>
         </div>
         <div id="footer1">footer</div>
 
     </div>
 </body>
+
 </html>
