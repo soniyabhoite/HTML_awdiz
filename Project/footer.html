@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <script src="https://kit.fontawesome.com/aaa593ce74.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: 'OnePlus Sans Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+            margin: 0;
+            padding: 0;
+        }
+
+        #footer {
+            width: 100%;
+            height: 1000px;
+            /* margin-top: 0; */
+            background-color: black;
+            border: 2px solid rgb(31, 21, 21);
+            /* margin:auto;*/
+        }
+
+        #footer>div {
+            width: 90%;
+            height: auto;
+            /* border: 2px solid rgb(26, 211, 125); */
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        #footer>div>div>p:nth-child(1) {
+            height: 30px;
+            color: white;
+            border-bottom: 1.5px solid #4D4D4D;
+            font-size: 18px;
+            /* padding-top: 50px; */
+
+        }
+
+        #footer>div>div:nth-child(2) {
+            /* border: 2px solid rgb(110, 236, 110); */
+            height: 300px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #footer>div>div:nth-child(2)>div {
+            width: 49%;
+            height: 100%;
+            /* border:2px solid white; */
+        }
+
+        #footer>div>div:nth-child(2)>div:nth-child(1) {
+            background-image: url('https://oasis.opstatics.com/content/dam/oasis/page/2022/new-homepage/na/homepage/subscribe/APPdownload_PC_Red_New.png.thumb.webp');
+            background-size: 98% 100%;
+        }
+
+        #footer>div>div:nth-child(2)>div:nth-child(2) {
+            background-image: url('https://oasis.opstatics.com/content/dam/oasis/page/2022/new-homepage/na/homepage/subscribe/Subscribe-PC-2card.jpg.thumb.webp');
+            background-size: 98% 100%;
+        }
+
+        #footer-section>div>div {
+            width: 48%;
+            height: 100%;
+            padding-left: 10px;
+            padding-top: 22px;
+            /* border: 2px solid grey; */
+            /* color: white; */
+        }
+
+        #footer-section>div>div>p:nth-child(1) {
+
+            font-size: 34px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        #footer-section>div>div>p:nth-child(2) {
+
+            font-size: 14px;
+            color: #a19d9f;
+        }
+
+        /* #footer-section>div>div>button:nth-child(3){
+          width:100%;
+          height:50Px;
+          margin-top: 40%;
+          font-size: 16px;
+           color:white;
+           background-color:rgba(0,0,0,0.0);
+           border:1px solid  #4D4D4D;
+       } */
+        #google-play {
+            background-image: url('https://oasis.opstatics.com/content/dam/oasis/page/2022/new-homepage/na/homepage/subscribe/btn-PC.png');
+            width: 100%;
+            height: 50Px;
+            margin-top: 37%;
+            background-size: cover;
+            /* font-size: 16px; */
+            /* color:white; */
+            /* background-color:rgba(0,0,0,0.0); */
+            border: 1px solid #4D4D4D;
+        }
+
+        #subscribe {
+            width: 100%;
+            height: 50Px;
+            margin-top: 2.5%;
+            font-size: 16px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.0);
+            border: 1px solid #4D4D4D;
+        }
+
+        #footer-option {
+            /* border:2px solid yellow; */
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        #footer-option>div {
+            width: 20%;
+            height: auto;
+            /* border:2px solid grey; */
+            text-align: left;
+
+        }
+
+        #footer-option>div>div {
+            /* width:20%;
+        height:500px;
+        border:2px solid grey; */
+            color: white;
+            font-size: 15px;
+            padding-top: 20px;
+
+        }
+
+        #footer-option>div>div:nth-child(2)>p {
+            color: #a19d9f;
+            font-size: 12px;
+            padding-top: 10px;
+
+        }
+
+        ul {
+            color: #a19d9f;
+            font-size: 12px;
+
+            list-style-type: none;
+        }
+
+        li {
+            padding-top: 10px;
+        }
+
+        #payment-mode {
+            height: 30px;
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1.5px solid #a19d9f;
+            color: white;
+        }
+
+        #left {
+            width: 39%;
+            /* border:2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #left>div {
+            width: 24%;
+            height: 100%;
+            color: #a19d9f;
+            font-size: 12px;
+
+
+        }
+
+        #left>div>div:nth-child(1) {
+            display: flex;
+            height: 100%;
+
+            /* justify-content: space-between; */
+        }
+
+        #right {
+            width: 30%;
+            /* border:2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            color: #a19d9f;
+            font-size: 14px;
+
+
+        }
+
+        #right>div:nth-child(5),
+        :nth-child(6) {
+            color: white;
+            font-size: 14px;
+        }
+
+        #right>div:nth-child(6) {
+            position: relative;
+            right: 23px;
+        }
+
+        i {
+            width: 50%;
+            height: 50%;
+        }
+        #user-rights{
+            display: flex;
+            justify-content: space-between;
+            height:100px;
+            border: 2px solid red;
+            margin-top:10px;
+        }
+        #user-rights>div:nth-child(1)
+        {
+            display: flex;
+            justify-content: space-between;
+            width:77%;
+            border:2px solid green;
+           
+
+        }
+        #user-rights>div:nth-child(2)
+        {
+            display: flex;
+            
+             justify-content:end;
+            width:20%;
+            border:2px solid green;
+            color: #a19d9f;
+           
+
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div id="footer">
+        <div>
+            <div>
+                <p>Stay connected</p>
+            </div>
+
+            <div id="footer-section">
+                <div>
+                    <div>
+                        <p>Shop With Exclusive Benefits</p>
+                        <p>Download OnePlus store app on Google Play</p>
+
+                        <div id="google-play"></div>
+                    </div>
+                </div>
+                <div>
+
+                    <div>
+                        <p>Always be the first to know.</p>
+                        <p>Sign up for our newsletter!
+                        <p style=" color:#a19d9f;font-size: 12px;padding-top: 60px;">Subscribe to receive news,
+                            promotions and recommendations about OnePlus products and services from OnePlus, its
+                            agencies and partners.</p>
+                        </p>
+
+                        <button id="subscribe">Subscribe Now</button>
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="footer-option">
+                <div>
+                    <div>Phone</div>
+                    <div>
+                        <p>OnePlus Open</p>
+                        <p>OnePlus 11 5G</p>
+                        <p>OnePlus 11R 5G</p>
+                        <p>OnePlus Nord 3 5G</p>
+                        <p>OnePlus Nord CE3 5G</p>
+                        <p>OnePlus Nord CE 3 Lite 5G</p>
+                        <p>OnePlus 10R 5G</p>
+                        <p>OnePlus 10 Pro 5G</p>
+                        <p>OnePlus 9 5G</p>
+                        <p>OnePlus 9R 5G</p>
+                        <p>OnePlus Nord 2T 5G</p>
+                        <p>OnePlus Nord CE 2 Lite 5G</p>
+                    </div>
+                </div>
+                <div>
+                    <div>Store</div>
+                    <div>
+                        <p>Tablet</p>
+                        <p>TV & Display</p>
+                        <p>Audio</p>
+                        <p>wearable</p>
+                        <p>Cases & Protection</p>
+                        <p>Power & Cables</p>
+                        <p>Bundles</p>
+                        <p>Gear</p>
+                    </div>
+                </div>
+                <div>
+                    <div>Support</div>
+                    <div>
+                        <ul>
+                            <li>Protection Plan</li>
+
+                            <li>Shopping FAQs</li>
+                            <li> User Manuals</li>
+                            <li>Service Centers</li>
+                            <li> Affiliate Program</li>
+                            <li>Repair Service</li>
+                            <li>Repair Pricing</li>
+                            <li>TV Spare Part Price</li>
+                            <li>Software Update</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>Explore</div>
+                    <div>
+                        <ul>
+                            <li>About OnePlus</li>
+                            <li>Community</li>
+                            <li>Find a Store</li>
+                            <li>OnePlus Store app</li>
+                            <li>OxygenOS</li>
+                            <li>Press</li>
+                            <li>Blog</li>
+                            <li>careers</li>
+                            <li> Campus Opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div>Programs</div>
+
+
+                    <div>
+                        <ul>
+                            <li>Exchange Program</li>
+                            <li>Red Cable Club</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="payment-mode">
+                <div id="left">
+                    <div>
+                        <div><img
+                                src="https://oasis.opstatics.com/content/dam/oasis/page/footer/Credit_Card-outline.svg"
+                                alt="" style="width:20px;height: 15px;object-fit: cover;">
+                            <p>Credit/Debit Card</p>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div><img src="https://oasis.opstatics.com/content/dam/oasis/page/footer/Netbanking-outline.svg"
+                                alt="" style="width:20px;height: 15px;object-fit: cover;color:white">
+                            <p>NetBanking</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><img src="https://oasis.opstatics.com/content/dam/oasis/page/footer/EMI-outline.svg" alt=""
+                                style="width:20px;height: 15px;object-fit: cover;">
+                            <p>EMI</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div><img src="https://oasis.opstatics.com/content/dam/oasis/page/footer/Wallet-pay-outline.svg"
+                                alt="" style="width:20px;height: 15px;object-fit: cover;">
+                            <p>Wallet</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="right">
+                    <div><i class="fa-brands fa-facebook fa-lg"></i></div>
+                    <div><i class="fa-solid fa-circle-xmark fa-lg"></i></div>
+                    <div><i class="fa-brands fa-instagram fa-lg"></i></div>
+                    <div>|</div>
+                    <div>Get Support From OnePlus</div>
+                    <div>\/</div>
+
+
+                </div>
+
+
+            </div>
+            <div id="user-rights">
+                <div>
+                    <div>
+                        <div><img src="https://image01.oneplus.net/shop/202307/14/1-M00-46-89-CkvTlmSxGVyABjEvAAAMWxG1ttA783.png" alt=""  style="width:90px;height:25px;"></div></div>
+                </div>
+                <div><p>India (English)</p><img src="./../Images/www.png" alt="" style="width:30px;height:30px;"></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
