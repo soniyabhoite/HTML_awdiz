@@ -384,49 +384,81 @@
             width: 100%;
             transition: all .4s cubic-bezier(.5, .15, 0, 1);
         }
-        #hot-pick-menu>div:nth-child(1){
-            width:650px;
-            border:2 px solid blue;
-            height:50px;
+
+        #hot-pick-menu>div:nth-child(1) {
+            width: 650px;
+            border: 2 px solid blue;
+            height: 50px;
             /* margin: auto; */
             padding-top: 30px;
             padding-left: 0px;
-            font-size:20px ;
+            font-size: 20px;
             display: flex;
             justify-content: space-between;
         }
-        #highlight{
+
+        #highlight {
             margin: auto;
             display: flex;
             justify-content: space-between;
         }
-        .highlight-div{
+
+        .highlight-div {
             width: 24%;
             height: 100%;
             background-color: #FFF0C0;
             /* border: 2px solid greenyellow; */
         }
-        #highlight-info{
+
+        #highlight-info {
             margin: auto;
             display: flex;
+            padding-top: 20px;
             justify-content: space-between;
         }
-        .highlight-div-info{
-            width: 24%;
-            height: 100%;
-            background-color: #FFF0C0;
-             border: 2px solid greenyellow; 
-        }
-        .highlight-div>img{
+
+
+        .highlight-div>img {
             width: 320px;
             height: 100%;
             object-fit: cover;
 
         }
-        .highlight-div>img:hover{
+
+        .highlight-div>img:hover {
             scale: 1.08;
         }
-         
+
+        .highlight-div-info>p {
+            font-size: 23px;
+            font-weight: 500;
+        }
+
+        .highlight-div-info {
+            width: 24%;
+            height: 100%;
+            /* background-color: #FFFBBE; */
+            /* border: 2px solid greenyellow; */
+        }
+        .highlight-div-info>div{
+            display: flex;
+            /* padding-top: 40px; */
+            width:200px;
+            height:20px;
+            bottom: 0;
+            
+        }
+         .highlight-div-info>div:hover{
+            align-items: center;
+            height: 20px;
+            padding-left: 50px;
+           background-color: black;
+           color: white;
+           
+
+            
+        }
+
         #footer1 {
             width: 100%;
             height: 200px;
@@ -579,24 +611,47 @@
                             <div>wearable</div>
                             <div>Accessories</div>
                         </div>
-                       
+
+                    </div>
+                    <div id="highlight">
+                        <div class="highlight-div"><img
+                                src="./../Images/1-m00-50-fd-cpgm7wqj5riagurqaakzkxnnips198_420_420.png" alt=""></div>
+                        <div class="highlight-div"><img
+                                src="./../Images/1-m00-4e-16-cpgm7mpjxnoabtqjaah4p22vdfq137_420_420.png" alt=""></div>
+                        <div class="highlight-div"><img
+                                src="./../Images/1-m00-50-fb-cpgm7wqiw0kacxzxaaj0aogerf8199_420_420.png" alt=""></div>
+                        <div class="highlight-div"><img
+                                src="./../Images/1-m00-51-1b-cpgm7wq35waawfbbaas0vraswfq234_420_420.png" alt=""></div>
+
+
+                    </div>
+                    <div id="highlight-info">
+                        <div class="highlight-div-info">
+
+                            <p> OnePlus Nord CE 3 Lite 5G</p>
+                           <span><p style="font-size: 13px;padding-top: 10px;">Save with RedCoins</p></span> 
+                           <span><p style="font-size: 15px;padding-top: 10px;">Save ₹500 with coupon</p></span> 
+                           <div style="padding-top: 40px;"><div><i class="fa-solid fa-cart-shopping"></i></div><div style="padding-left: 10px;">From ₹19,999</div></div>
                         </div>
-                        <div id="highlight">
-                            <div class="highlight-div"><img src="./../Images/1-m00-50-fd-cpgm7wqj5riagurqaakzkxnnips198_420_420.png" alt=""></div>
-                            <div class="highlight-div"><img src="./../Images/1-m00-4e-16-cpgm7mpjxnoabtqjaah4p22vdfq137_420_420.png" alt=""></div>
-                            <div class="highlight-div"><img src="./../Images/1-m00-50-fb-cpgm7wqiw0kacxzxaaj0aogerf8199_420_420.png" alt=""></div>
-                            <div class="highlight-div"><img src="./../Images/1-m00-51-1b-cpgm7wq35waawfbbaas0vraswfq234_420_420.png" alt=""></div>
-    
-                                
+                        <div class="highlight-div-info">
+                            <p>OnePlus 11 5G</p>
+                       <span><p style="font-size: 13px;padding-top: 10px;">With Gift</p></span> 
+                          <span><p style="font-size: 15px;padding-top: 10px;">  Save ₹4 000 with coupon. Get free Buds Z2 on every purchase.</p></span>
+                         <div style="padding-top: 20px;"><div><i class="fa-solid fa-cart-shopping"></i></div><div style="padding-left: 10px;padding-top: 0px;">From ₹56,999</div></div>
                         </div>
-                        <div id="highlight-info">
-                            <div class="highlight-div-info"></div>
-                            <div class="highlight-div-info"></div>
-                            <div class="highlight-div-info"></div>
-                            <div class="highlight-div-info"></div>
-    
-                                
+                        <div class="highlight-div-info">
+                            <p>OnePlus Nord Buds 2</p>
+                            <span><p style="font-size: 15px;padding-top: 15px;">Save extra up to ₹200 by using the APP exclusive coupon</p></span>
+                            <div style="padding-top: 40px;"><div><i class="fa-solid fa-cart-shopping"></i></div><div style="padding-left: 10px;bottom: 0;">From ₹2,999</div></div>
                         </div>
+                        <div class="highlight-div-info">
+                            <p>OnePlus Pad</p>
+                           <span><p style="font-size: 15px;padding-top: 15px;"> Save ₹2000 with RCC Linked Device Coupon.</p></span>
+                       <div style="padding-top: 40px;"><div><i class="fa-solid fa-cart-shopping"></i></div><div style="padding-left: 10px;bottom: 0;">From ₹35,499</div></div>
+                        </div>
+
+
+                    </div>
 
 
                 </div>
