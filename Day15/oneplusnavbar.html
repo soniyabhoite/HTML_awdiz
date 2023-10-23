@@ -18,16 +18,19 @@
             max-width:100%;
             height: 150px;
             border:2px solid black;
+            background-color: black;
 
         }
         #navbar{
             max-width:90%;
-            height:100px;
+            height:60px;
             display: flex;
             justify-content: space-between;
-            border: 2px solid red;
+            /* border: 2px solid red; */
             margin: auto;
             margin-top: 20px;
+           
+            color: white;
         }
         /* #navbar>div{
              border: 2px solid blue; 
@@ -36,14 +39,25 @@
             width:2%;
         }
         #navigation{
-            width:48%;
+            width:50%;
+            display: flex;
+            justify-content: space-between;
         }
-        #navigation>div{
+         #navigation>div:nth-child(1){
+
+           width:10%;
+          margin-right: 10px;
+        } 
+        
+        #navigation>div:nth-child(2){
+           
+            width:85%;
+            padding-left: 2%;
             display: flex;
             justify-content: space-between;
         }
         #side-section{
-            width:46%;
+            width:45%;
             display: flex;
             justify-content: space-between;
         }
@@ -60,6 +74,36 @@
             justify-content: space-between;
           
         } 
+        #right>div:nth-child(2),#right>div:nth-child(3){
+            padding-left: 10px;
+        }
+        #slider>img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+        }
+
+        .top-left-one {
+            position: absolute;
+            top: 20px;
+            left: 25px;
+        }
+
+        .top-left-two {
+            position: absolute;
+            font-size: 40px;
+            top: 40px;
+            left: 30px;
+        }
+
+        .top-bottom {
+            position: absolute;
+
+            top: 400px;
+            left: 30px;
+
+        }
+
   #bars{
     display: none;
   }
@@ -87,8 +131,20 @@
     }
     #navigation>div:nth-child(1)
     {
-        width:100%;
+        width:150%;
         justify-content: center;
+    }
+    #side-section>div:nth-child(2){
+        width: 80%;
+        justify-content: right;
+        
+       
+    }
+    #right>div:nth-child(3)>i{
+       display: none;
+    }
+    #right>div:nth-child(2){
+      padding-left: 20px;
     }
     
   }
@@ -99,10 +155,10 @@
 <body>
     <div id="body">
         <div id="navbar">
-            <div id="bars">=</div>
+            <div id="bars"><i class="fa fa-bars" aria-hidden="true"></i></div>
             <div id="navigation">
                 <div> <img class="w-h-100" src="./../Images/oneplus-wordmark-4.svg" alt="logo"
-                    style="height: 23px;width:90px;padding-top: -10px;">
+                    style="height: 23px;width:130%;">
                 </div>
                 <div>
                     <div>Phone</div>
@@ -127,6 +183,20 @@
                     <div><i class="fa-regular fa-user"></i></div>
                 </div>
             </div>
+        </div>
+        <div id="slider">
+            <img class="w-h-100" src="./../Images/diwali_lunch-desktop.jpg.thumb.webp">
+            <div>
+                <!-- <div class="top-left-one">With those who Matter</div>
+                <div class="top-left-two"> #One Celebration</div> -->
+            </div>
+            <div>
+                <div class="top-bottom">
+                    <button style="width:140px;height: 33px;background-color: black;color: white;">Buy Now</button>
+
+                </div>
+            </div>
+
         </div>
         
     </div>
