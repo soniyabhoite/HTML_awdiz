@@ -1033,3 +1033,20 @@ i {
    
 
 }
+
+@media  screen and (max-width:750px) {
+    #footer-section{
+        flex-direction: column;
+    }
+    #footer-section>div:nth-child(2)
+    {
+        margin-top:20px;
+    }
+    #footer-option>div:nth-child(1)>div:nth-child(1){
+        margin-top:200px;
+    }
+    #footer-option>div:nth-child(1)>div:nth-child(2){
+        display: none;
+    }
+    
+}
