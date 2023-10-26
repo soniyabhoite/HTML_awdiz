@@ -19,7 +19,7 @@
         #phone {
             max-width: 100%;
             background-color: white;
-            border: 2px solid red;
+            /* border: 2px solid red; */
             height: auto;
         }
 
@@ -34,7 +34,7 @@
 
         #mobile-phone {
             max-width: 90%;
-            border: 2px solid green;
+            /* border: 2px solid green; */
             margin: auto;
 
         }
@@ -59,6 +59,10 @@
             margin-top: 40px;
         }
 
+        input[type='checkbox'] {
+            accent-color: red;
+        }
+
         #mobile-phone {
             /* border: 2px solid green; */
             max-width: 100%;
@@ -68,40 +72,70 @@
         }
 
         #content-left {
-            width: 22%;
-            border: 2px solid black;
-            height: 500px;
+            width: 24%;
+            border: 2px solid rgb(202, 196, 196);
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+            /* height: 1800px; */
+        }
+
+        #content-left>div {
+            width: 70%;
+            margin: auto;
+            margin-top: 38px;
+            /* border:2px solid green; */
         }
 
         #content-right {
             width: 77%;
-             
+
             /* border: 2px solid rgb(224, 88, 88); */
             height: auto;
 
         }
 
-        #content-right>div:nth-child(1)>div{
+        #content-right>div:nth-child(1)>div {
 
             margin: auto;
         }
-        #content-right>div:nth-child(1)>div:nth-child(3){
-            /* border:2px solid blue; */
 
-              margin: auto;
-              margin-left: 50px;
-              margin-right: 50px;
-              height: 150px;
-            }
+        #content-right>div:nth-child(1)>div:nth-child(3) {
+            /* border:2px solid blue;  */
 
-            #content-right>div:nth-child(5)>div{
-            /* border:2px solid blue; */
+            margin: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: 150px;
+        }
 
-              margin: auto;
-              margin-left: 50px;
-              margin-right: 50px;
-              height: 150px;
-            }
+        #content-right>div:nth-child(1)>div:nth-child(5) {
+            /* border:2px solid blue;  */
+
+            margin: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: 150px;
+        }
+
+        #content-right>div:nth-child(1)>div:nth-child(7) {
+            /* border:2px solid blue;  */
+
+            margin: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: 150px;
+        }
+
+        #content-right>div:nth-child(1)>div:nth-child(9) {
+            /* border:2px solid blue;  */
+
+            margin: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: 150px;
+        }
+
         .mobile-img {
             width: 90%;
 
@@ -122,83 +156,104 @@
             height: 100%;
             width: 100%;
         }
-        #content-right>div:nth-child(1)>div:nth-child(1)>p{
-            margin:auto;
+
+        #content-right>div:nth-child(1)>div:nth-child(1)>p {
+            margin: auto;
             margin-left: 50px;
             margin-top: 30px;
             margin-bottom: 20px;
-            
+
             font-size: 16px;
-            color:#474749;
+            color: #474749;
 
         }
-        #content-right>div:nth-child(1)>div:nth-child(1)>p{
+
+        #content-right>div:nth-child(1)>div:nth-child(1)>p {
             font-size: 16px;
             color: #a4a4ad;
 
         }
-        #content-right>div:nth-child(1)>div:nth-child(1)>p:nth-child(1)>span{
+
+        #content-right>div:nth-child(1)>div:nth-child(1)>p:nth-child(1)>span {
             font-size: 16px;
             color: rgb(34, 30, 30);
 
         }
-        .mobile-info{
+
+        .mobile-info {
+
             margin-top: 20px;
             margin: auto;
+
             display: flex;
             justify-content: space-between;
         }
-        .mobile-info>div{
+
+        .mobile-info>div {
             width: 32%;
         }
-        .mobile-info>div>p:nth-child(1)
-        {
+
+        .mobile-info>div>p:nth-child(1) {
             padding-top: 25px;
             font-size: 21px;
             font-weight: 500px;
             color: rgb(43, 37, 37);
 
         }
-        .mobile-info>div>p:nth-child(2)
-        {
-            padding-top:8px;
-            font-size:13px;
+
+        .mobile-info>div>p:nth-child(2) {
+            padding-top: 8px;
+            font-size: 13px;
             color: red;
         }
-        .mobile-info>div>p:nth-child(2)>span:nth-child(2)
-        {
-            font-size:13px;
+
+        .mobile-info>div>p:nth-child(2)>span:nth-child(2) {
+            font-size: 13px;
             color: rgb(20, 18, 18);
         }
-        .mobile-info>div>p:nth-child(2)>span:nth-child(1)
-        {
-            font-size:13px;
+
+        .mobile-info>div>p:nth-child(2)>span:nth-child(1) {
+            font-size: 13px;
             color: rgb(160, 152, 152);
         }
-        .mobile-info>div>p:nth-child(3)
-        {
-            padding-top:10px;
-            font-size:14px;
+
+        .mobile-info>div>p:nth-child(3) {
+            padding-top: 10px;
+            font-size: 14px;
             font-weight: 500;
             color: rgb(29, 26, 26);
         }
-        .mobile-info>div>div{
+
+        .mobile-info>div>div {
             padding-top: 20px;
         }
-        .mobile-info>div>div>del{
-           color: #a4a4ad;
-           font-size: 13px;
+
+        .mobile-info>div>div>del {
+            color: #a4a4ad;
+            font-size: 13px;
         }
-        .mobile-info>div>div:hover{
+
+        .mobile-info>div>div:hover {
             margin-top: 10px;
             background-color: black;
             color: white;
-            height:20px;
+            height: 20px;
             text-align: center;
             font-size: 14px;
         }
-       
-
+        #reset>button:n-child(1):hover{
+            background-color: #a4a4ad;
+        }
+        @media screen and (max-width:1020px)
+        {
+            #mobile-phone{
+              
+                flex-direction: column;
+            }
+            #content-left{
+                height: auto;
+            }
+        }
     </style>
     <script src="https://kit.fontawesome.com/aaa593ce74.js" crossorigin="anonymous"></script>
 </head>
@@ -255,7 +310,72 @@
         </div>
         <hr>
         <div id="mobile-phone">
-            <div id="content-left">left</div>
+            <div id="content-left">
+                <div>
+                    <div>
+                        <p>Series</p>
+                        <div style="margin-top: 15px;font-size: 15px;">
+                            <div><input type="checkbox" name="" id=""> Flagship Series <sup
+                                    style="color: red;font-size: 12px;">New</sup></div>
+
+
+                            <div style="padding-top: 10px;"><input type="checkbox" name="" id=""> Nord Series <sup
+                                    style="color: red;font-size: 12px;">New</sup></div>
+                        </div>
+                    </div>
+                    <div style="margin-top:50px;">
+                        <p>Offers</p>
+                        <div style="margin-top: 15px;font-size: 15px;">
+                            <div><input type="checkbox" name="" id=""> On Sale
+                                <sup style="color: red;font-size: 12px;">New</sup>
+                            </div>
+
+
+                            <div style="padding-top: 10px;"><input type="checkbox" name="" id=""> With Gift</div>
+                            <div style="padding-top: 10px;"><input type="checkbox" name="" id=""> Save with RedCoins
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:50px;">
+                        <p>RAM/Storage</p>
+                        <div style="margin-top: 15px;font-size: 15px;">
+                            <div><input type="checkbox" name="" id=""> 6+128 GB</div>
+                            <div style="padding-top: 10px;"><input type="checkbox" name="" id=""> 8+128 GB</div>
+                            <div style="padding-top: 10px;"><input type="checkbox" name="" id=""> 8+256 GB </div>
+                            <div style="padding-top: 10px;"><input type="checkbox" name="" id=""> 12+256 GB</div>
+                            <div style="padding-top: 10px;"><input type="checkbox" name="" id=""> 16+256 GB</div>
+                            <div style="padding-top: 10px;"><input type="checkbox" name="" id=""> 16+512 GB
+                                <sup style="color: red;font-size: 12px;">New</sup>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top:20px;">
+                        <p>View 1 More</p>
+                    </div>
+                    <div style="margin-top:50px;">
+                        <div>Price Range</div>
+                        <div style="margin-top: 20px;">₹0
+                            -
+                            ₹99,999</div>
+                        <div style="margin-top: 20px;"> <input type="range" id="vol" name="vol" min="0" max="99999"
+                                style=" accent-color : red;width:180px"></div>
+                        <div style="margin-top: 10px;font-size: 12px;color: gray;">₹0
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹99,999
+                        </div>
+
+                    </div>
+                    <div style="margin-top:30px;">
+                        <div>Availability</div>
+                        <div style="padding-top: 20px;"><input type="checkbox" name="" id=""> In Stock</div>
+                        <div id="reset" style="margin-top:40px"> <button 
+                                style="width:200px;height: 40px;background-color: white;">Reset</button></div>
+                    </div>
+                </div>
+
+            </div>
 
             <div id="content-right">
                 <div>
@@ -275,7 +395,8 @@
 
                     </div>
                     <div class="mobile-info">
-                        <div> <p>OnePlus Open</p>
+                        <div>
+                            <p>OnePlus Open</p>
                             <p>6 % OFF <span>|</span> <span>With Gift</span></p>
                             <p>Emerald Dusk 16GB RAM + 512GB Storage </p>
                             <div>
@@ -284,7 +405,8 @@
                                 <del style="padding-left: 10px;">₹149,999</del>
                             </div>
                         </div>
-                        <div> <p>OnePlus 11R 5G</p>
+                        <div>
+                            <p>OnePlus 11R 5G</p>
                             <p><span></span></p>
                             <p style="padding-top: 30px;">Galactic Silver 16 GB RAM + 256 GB Storage</p>
                             <div>
@@ -303,8 +425,8 @@
                                 <del></del>
                             </div>
                         </div>
-                       
-                       
+
+
                     </div>
                     <div class="mobile-img">
                         <div class="m-mobile-img"><img
@@ -318,7 +440,8 @@
                                 alt=""></div>
                     </div>
                     <div class="mobile-info">
-                        <div> <p>OnePlus Open</p>
+                        <div>
+                            <p>OnePlus Open</p>
                             <p>6 % OFF <span>|</span> <span>With Gift</span></p>
                             <p>Emerald Dusk 16GB RAM + 512GB Storage </p>
                             <div>
@@ -327,7 +450,8 @@
                                 <del style="padding-left: 10px;">₹149,999</del>
                             </div>
                         </div>
-                        <div> <p>OnePlus 11R 5G</p>
+                        <div>
+                            <p>OnePlus 11R 5G</p>
                             <p><span></span></p>
                             <p style="padding-top: 30px;">Galactic Silver 16 GB RAM + 256 GB Storage</p>
                             <div>
@@ -346,8 +470,8 @@
                                 <del></del>
                             </div>
                         </div>
-                       
-                       
+
+
                     </div>
                     <div class="mobile-img">
                         <div class="m-mobile-img"><img
@@ -361,7 +485,8 @@
                                 alt=""></div>
                     </div>
                     <div class="mobile-info">
-                        <div> <p>OnePlus Open</p>
+                        <div>
+                            <p>OnePlus Open</p>
                             <p>6 % OFF <span>|</span> <span>With Gift</span></p>
                             <p>Emerald Dusk 16GB RAM + 512GB Storage </p>
                             <div>
@@ -370,7 +495,8 @@
                                 <del style="padding-left: 10px;">₹149,999</del>
                             </div>
                         </div>
-                        <div> <p>OnePlus 11R 5G</p>
+                        <div>
+                            <p>OnePlus 11R 5G</p>
                             <p><span></span></p>
                             <p style="padding-top: 30px;">Galactic Silver 16 GB RAM + 256 GB Storage</p>
                             <div>
@@ -389,31 +515,38 @@
                                 <del></del>
                             </div>
                         </div>
-                       
-                       
+
+
                     </div>
                     <div class="mobile-img">
-                        <div class="m-mobile-img"><img
+                        <div class="m-mobile-img"><img style="opacity: 0.1;"
                                 src="https://image01-in.oneplus.net/ebp/202207/14/1-m00-3d-17-cpgm7mlpjvyadbdqaal4taem8ii614.png?x-amz-process=image/format"
-                                alt=""></div>
-                        <div class="m-mobile-img"><img
+                                alt="">
+                                <div style="width:90px;height:20px;position:relative;top:-160px;left:100px;font-size: 13px;border: 1px solid grey;border-radius: 9%;text-align: center;padding-top: 7px;">Out of Stock</div>
+                            
+                            </div>
+                        <div class="m-mobile-img"><img style="opacity: 0.1;"
                                 src="https://oasis.opstatics.com/content/dam/oasis/page/events/ovaltine/eu/OnePlusNordCE%202Lite-1.png"
-                                alt=""></div>
-                        <div class="m-mobile-img"><img
+                                alt="">
+                                <div style="width:90px;height:20px;position:relative;top:-160px;left:100px;font-size: 13px;border: 1px solid grey;border-radius: 9%;text-align: center;padding-top: 7px;">Out of Stock</div></div>
+                        <div class="m-mobile-img"><img style="opacity: 0.1;"
                                 src="https://image01-in.oneplus.net/ebp/202303/29/1-m00-50-fd-cpgm7wqj5riagurqaakzkxnnips198.png?x-amz-process=image/format"
-                                alt=""></div>
+                                alt="">
+                                <div style="width:90px;height:20px;position:relative;top:-160px;left:100px;font-size: 13px;border: 1px solid grey;border-radius: 9%;text-align: center;padding-top: 7px;">Out of Stock</div></div>
                     </div>
                     <div class="mobile-info">
-                        <div> <p>OnePlus Open</p>
-                            <p>6 % OFF <span>|</span> <span>With Gift</span></p>
-                            <p>Emerald Dusk 16GB RAM + 512GB Storage </p>
+                        <div>
+                            <p>OnePlus 10T 5G</p>
+                            <p>20 % OFF <span>|</span> </p>
+                            <p>8 GB RAM + 128 GB Storage Moonstone Black</p>
                             <div>
                                 <i class="fa-solid fa-cart-shopping"></i>
-                                <span style="padding-left: 10px;">₹139,999 </span>
-                                <del style="padding-left: 10px;">₹149,999</del>
+                                <span style="padding-left: 10px;">₹39,999 </span>
+                                <del style="padding-left: 10px;">₹49,999</del>
                             </div>
                         </div>
-                        <div> <p>OnePlus 11R 5G</p>
+                        <div>
+                            <p>OnePlus 11R 5G</p>
                             <p><span></span></p>
                             <p style="padding-top: 30px;">Galactic Silver 16 GB RAM + 256 GB Storage</p>
                             <div>
@@ -432,8 +565,8 @@
                                 <del></del>
                             </div>
                         </div>
-                       
-                       
+
+
                     </div>
 
                 </div>
