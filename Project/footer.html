@@ -15,7 +15,7 @@
 
         #footer {
             width: 100%;
-            height: 1000px;
+            height: auto;
             /* margin-top: 0; */
             background-color: black;
             border: 2px solid rgb(31, 21, 21);
@@ -41,7 +41,8 @@
 
         #footer>div>div:nth-child(2) {
             /* border: 2px solid rgb(110, 236, 110); */
-            height: 300px;
+            width:100%;
+            height:350px ;
             margin-top: 10px;
             display: flex;
             justify-content: space-between;
@@ -49,8 +50,8 @@
         }
 
         #footer>div>div:nth-child(2)>div {
-            width: 49%;
-            height: 100%;
+           width: 49%;
+            height:100% ;
             /* border:2px solid white; */
         }
 
@@ -204,9 +205,14 @@
 
             /* justify-content: space-between; */
         }
+        #right{
+            width:40%; 
+            display: flex;
+            justify-content: space-between;
+        }
 
-        #right {
-            width: 30%;
+        #right>div {
+            width: 49%;
             /* border:2px solid red; */
             display: flex;
             justify-content: space-between;
@@ -243,12 +249,18 @@
             
             /* border:2px solid green; */
         }
-        #privacy-option
+        #privacy-option{
+            display: flex;
+            justify-content: space-between; 
+            width:100%; 
+            height:90px;
+        }
+        #privacy-option>div
         {
+            width:50%;
              display: flex;
             justify-content: space-between; 
-             width:100%; 
-            height:90px;
+             
             
             /* border:2px solid rgb(61, 228, 219); */
             color:#a19d9f;
@@ -271,7 +283,109 @@
            
 
         }
-        
+        hr{
+            display: none;
+           
+        }
+        @media screen and (max-width:650px){
+
+            #footer>div>div:nth-child(2) {
+                flex-direction: column;
+             /* border:2px solid rgb(117, 226, 96); */
+             width:100%;
+             height: auto;
+
+
+             
+
+         }
+            #footer>div>div:nth-child(2)>div {
+                margin-top:10px;
+                /* border:2px solid blue; */
+                width:100%;
+                height:auto;
+
+
+                
+
+            }
+        }
+
+        @media screen and (min-width:651px) and (max-width:1024px){
+            #footer>div>div:nth-child(2)> {
+                width:100vw;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                }
+
+
+        }
+        @media screen and (max-width:1025px)
+        {
+            hr{
+                display: block;
+                height: 0.1px;
+            }
+            #footer-option>div>div:nth-child(2)
+            {
+                display: none;
+            }
+            #footer-option
+            {
+                 
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            #footer-option>div{
+                width:100%;
+            }
+            #payment-mode{
+                height:90px;
+                flex-direction: column-reverse;
+
+            }
+            #payment-mode>div{
+                width:100%;
+                margin-top: 10px;
+                
+            }
+            #right{
+              
+                flex-direction: column-reverse;
+            }
+            #right>div{
+                width:30%;
+                padding-top: 20px;
+            }
+            #right>div:nth-child(1){
+                width: 20%;
+            }
+            #right>div>div:nth-child(4)
+            {
+                display: none;
+            }
+            #right>div:nth-child(2)>div:nth-child(2)
+            {
+                display: none;
+            }
+            #left{
+                padding-top: 5px;
+            }
+            #left>div{
+                
+                width:30%;
+            }
+            #privacy-option{
+                flex-direction: column;
+            }
+            #privacy-option>div{
+                width:100%;
+             
+            }
+            
+
+        }
     </style>
 
 </head>
@@ -310,7 +424,7 @@
             </div>
             <div id="footer-option">
                 <div>
-                    <div>Phone</div>
+                    <div class="heading-option">Phone</div>
                     <div>
                         <p>OnePlus Open</p>
                         <p>OnePlus 11 5G</p>
@@ -325,7 +439,10 @@
                         <p>OnePlus Nord 2T 5G</p>
                         <p>OnePlus Nord CE 2 Lite 5G</p>
                     </div>
+                    <div><hr></div>
+
                 </div>
+
                 <div>
                     <div>Store</div>
                     <div>
@@ -338,6 +455,7 @@
                         <p>Bundles</p>
                         <p>Gear</p>
                     </div>
+                    <div><hr></div>
                 </div>
                 <div>
                     <div>Support</div>
@@ -355,6 +473,7 @@
                             <li>Software Update</li>
                         </ul>
                     </div>
+                    <div><hr></div>
                 </div>
                 <div>
                     <div>Explore</div>
@@ -371,6 +490,7 @@
                             <li> Campus Opportunities</li>
                         </ul>
                     </div>
+                    <div><hr></div>
                 </div>
 
                 <div>
@@ -384,6 +504,7 @@
                         </ul>
 
                     </div>
+                    <div><hr></div>
 
                 </div>
 
@@ -421,12 +542,18 @@
 
                 </div>
                 <div id="right">
-                    <div><i class="fa-brands fa-facebook fa-lg"></i></div>
+                   
+                    <div>
+                         <div><i class="fa-brands fa-facebook fa-lg"></i></div>
                     <div><i class="fa-solid fa-circle-xmark fa-lg"></i></div>
                     <div><i class="fa-brands fa-instagram fa-lg"></i></div>
                     <div>|</div>
+                    </div>
+                   <div>
                     <div>Get Support From OnePlus</div>
                     <div>\/</div>
+                   </div>
+                    
 
 
                 </div>
@@ -436,7 +563,8 @@
             <div id="user-rights">
                 <div>
                     <div id="privacy-option">
-                        <div>Privacy Policy</div>
+                        <div>
+                            <div>Privacy Policy</div>
                         <div>|</div>
                         <div>User Aggreement</div>
                         <div>|</div>
@@ -445,8 +573,12 @@
                         <div>E- Waste Managemment</div>
                         <div>|</div>
                         <div>Security Feedback</div>
-                        <div>2013-2023 OnePlus. All Rights Reserved.</div>
+                        </div>
+                        <div>
+                            <div>2013-2023 OnePlus. All Rights Reserved.</div>
                         <div><img src="https://image01.oneplus.net/shop/202307/14/1-M00-46-89-CkvTlmSxGVyABjEvAAAMWxG1ttA783.png" alt=""  style="width:90px;height:25px;"></div>
+                        </div>
+                        
                     </div>
                 </div>
                 <div><p>India (English)</p><img src="./../Images/www.png" alt="" style="width:30px;height:30px;"></div>
