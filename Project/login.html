@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/aaa593ce74.js" crossorigin="anonymous"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            font-family: "OnePlusSansText","Microsoft YaHei","Arial","sans-serif";
+        }
+        #heading{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+        section{
+            border-radius: 40px;
+            margin-left: 800px;
+        }
+        select{
+            height: 40px;
+            border-radius: 2px;
+            border: none;
+        }
+        input[type=number]{
+            width: 350px;
+            margin: auto;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+        }
+        input[type=password]{
+            width: 400px;
+            margin: auto;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+        }
+        .far fa-eye-slash{
+            position: fixed;
+            top:300px;
+            right:300px;
+           
+        }
+
+    </style>
+</head>
+<body style="align-content: center;">
+    <section class="vh-100" style="background-color: #F5F5F5;width:600px;margin:auto;margin-top: 30px;height:600px;">
+        <div class="container py-5 h-200">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+                    <div id="heading">
+                       <div> <h3 class="mb-5">Sign in / Create Account</h3></div>
+                       <div style="margin-top: 25px;"><i class="fa-solid fa-x"></i></div> 
+                    </div>
+                 
+      
+                  <div class="form-outline mb-4" style="margin-top: 50px;">
+                    <select name="" id="">
+                        <option value="">+91</option>
+                    </select><input type="number" id="typeEmailX-2" class="" placeholder="phone"/>
+                    
+                  </div>
+      
+                  <div class="form-outline mb-4" style="margin-top: 30px;">
+                    <input type="password" id="typePasswordX-2" class="" placeholder="password"/>
+                     <!-- <span style=" background-color: white;height: 80px;">  <i class='far fa-eye-slash'></i></span>  
+                     -->
+                  </div>
+      
+                  <!-- Checkbox -->
+                  <div class="" style="align-items: end;margin-top: 10px;margin-left: 200px;" >
+                   
+                    <a href="form-check-label" for="form1Example3"> Forgot password ? </a>
+                  </div>
+                  <div style="align-items: center;margin-left: 170px;margin-top: 30px;">
+                  <button class="btn btn-primary btn-lg btn-block" type="submit" style="border:none;font-size:14px;background-color: #E6E6E6;width: 200px;height:40px;border-radius: 40px;">Sign In with Password</button>
+                </div>
+                  <hr class="my-4">
+      
+                  <div style="align-items: center;margin-top: 100px;">
+                      <span><a href="">Account User Aggrement</a>  | <a href="">Privacy Notice</a></span>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
