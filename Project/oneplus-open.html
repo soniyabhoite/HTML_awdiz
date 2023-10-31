@@ -1,309 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        #oneplus-open{
+
+        #oneplus-open {
             max-width: 100%;
-    /* border: 5px solid black; */
-    font-family: 'OnePlus Sans Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+            /* border: 5px solid black; */
+            font-family: 'OnePlus Sans Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
         }
-        #main-div{
-            width:100%;
+
+        #main-div {
+            width: 100%;
             display: flex;
             justify-content: space-between;
-            border:2px solid red;
+            /* border:2px solid red; */
 
         }
-        #main-div>div{
-            width:50%;
-            height:500px;
-            border:2px solid #72f0b1;
+
+        #main-div>div {
+            width: 50%;
+            height: 500px;
+            /* border:2px solid #72f0b1; */
 
         }
-        #main-div>div:nth-child(1)
-        {
+
+        #main-div>div:nth-child(1) {
             background-color: #F4F4F4;
         }
-        #main-div>div:nth-child(1)>img
-        {
-            object-fit:contain;
-            width:100%;
+
+        #main-div>div:nth-child(1)>img {
+            object-fit: contain;
+            width: 100%;
             height: 100%;
         }
-        #main-div-info>div{
-            width:90%;
+
+        #main-div-info>div {
+            width: 90%;
             height: 100%;
             margin: auto;
             margin-top: 50px;
         }
-        #main-div-info>div:nth-child(1)>p:nth-child(1)
-        {
+
+        #main-div-info>div:nth-child(1)>p:nth-child(1) {
             font-size: 40px;
         }
-        #main-div-info>div:nth-child(1)>p:nth-child(2)
-        {
+
+        #main-div-info>div:nth-child(1)>p:nth-child(2) {
             font-weight: 600;
             font-size: 14px;
             color: #adabab;
             padding-top: 10px;
         }
-        #main-div-info>div:nth-child(1)>p:nth-child(3)
-        {
+
+        #main-div-info>div:nth-child(1)>p:nth-child(3) {
             font-size: 11px;
             color: #fc2b2b;
             padding-top: 10px;
         }
-        #main-div-info>div:nth-child(1)>p:nth-child(4)
-        {
+
+        #main-div-info>div:nth-child(1)>p:nth-child(4) {
             font-size: 25px;
             color: #363333;
             padding-top: 20px;
         }
-        #main-div-info>div:nth-child(1)>div{
+
+        #main-div-info>div:nth-child(1)>div {
             display: flex;
             justify-content: space-between;
             height: 25px;
             padding-top: 10px;
         }
-        #main-div-info>div:nth-child(1)>div:nth-child(5)>p
-        {
+
+        #main-div-info>div:nth-child(1)>div:nth-child(5)>p {
             font-weight: 600;
             font-size: 15px;
             color: #adabab;
         }
-        #main-div-info>div:nth-child(1)>div:nth-child(5)>div
-        {
+
+        #main-div-info>div:nth-child(1)>div:nth-child(5)>div {
             border-radius: 8%;
             text-align: center;
-            width:90px;
+            width: 90px;
             border: 1px solid red;
             font-weight: 500;
             font-size: 15px;
             color: #f73d3d;
             padding-top: 5px;
-           
+
         }
-       hr
-        {
+
+        hr {
             margin-top: 20px;
         }
-        #main-div-info>div:nth-child(1)>p:nth-child(7)
-        {
+
+        #main-div-info>div:nth-child(1)>p:nth-child(7) {
             font-size: 20px;
             color: #363333;
             padding-top: 20px;
         }
-        #main-div-info>div:nth-child(1)>div:nth-child(8)
-        {
+
+        #main-div-info>div:nth-child(1)>div:nth-child(8) {
             display: flex;
-            width:120px;
+            width: 120px;
             justify-content: space-between;
         }
-        #main-div-info>div:nth-child(1)>div:nth-child(8)>div{
-            width:50px;
+
+        #main-div-info>div:nth-child(1)>div:nth-child(8)>div {
+            width: 50px;
             height: 50px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
         }
-        #main-div-info>div:nth-child(1)>div:nth-child(8)>div>div{
-            width:40px;
+
+        #main-div-info>div:nth-child(1)>div:nth-child(8)>div>div {
+            width: 40px;
             height: 40px;
             border: 1px solid rgb(197, 184, 184);
             margin: auto;
             margin-top: 4px;
         }
-        #gray-color{
+
+        #gray-color {
             background-color: #7D8B81;
         }
-       
-        #black-color{
-            background-color:#212121 ;
+
+        #black-color {
+            background-color: #212121;
         }
-        #main-div-info>div:nth-child(1)>p:nth-child(9)
-        {
+
+        #main-div-info>div:nth-child(1)>p:nth-child(9) {
             font-weight: 500;
             font-size: 20px;
             color: #363333;
             padding-top: 50px;
         }
-        #main-div-info>div:nth-child(1)>div:nth-child(10)
-        {
+
+        #main-div-info>div:nth-child(1)>div:nth-child(10) {
             border: 1px solid black;
             border-radius: 3%;
             text-align: center;
             padding-left: 30px;
             padding-top: 20px;
-            width:220px;
+            width: 220px;
             height: 30px;
             font-weight: 600;
             font-size: 14px;
             color: #939393;
             margin-top: 20px;
         }
-        #img-info{
-            width:100%;
+
+        #img-info {
+            max-width: 100%;
             height: auto;
             background-color: #F8F8F8;
             margin: auto;
 
 
         }
-        .img-info-1{
+
+        .img-info-1 {
             margin: auto;
             margin-top: 50px;
-            width:95%;
-            height: 700px;
-            border: 2px solid green;
+            max-width: 97%;
+            height: 300px;
+            /* border: 2px solid green; */
             display: flex;
             justify-content: space-between;
         }
-        .img-info-1>div:nth-child(1){
-            width:500px;
-            height: 550px;
-            border: 1px solid wheat;
-          
+
+        .img-info-1>div:nth-child(1) {
+            width: 40%;
+            height: 300px;
+            /* border: 1px solid wheat; */
+
 
         }
-        .img-info-1>div:nth-child(2){
-            width:750px;
-            height: 700px;
-            border: 1px solid wheat;
-            background-color: #010103;
+
+        .img-info-1>div:nth-child(2) {
+            width: 58%;
+            height: 300px;
+            /* border: 1px solid wheat; */
+            /* background-color: #010103; */
 
         }
-        #mob-info-1{
-            background-image: url("https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/0zeung1gtQE4uR8h.jpg?x-amz-process=image/format,webp/quality,Q_80");
-            background-size: 100% 100%;
 
-            width:500px;
-           text-align: center; 
-            vertical-align: middle;
-            background-repeat:no-repeat
-        }
-        #mob-info-2{
-            background-image: url("https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/h1b02Z20NlqBykIB.jpg?x-amz-process=image/format,webp/quality,Q_80");
-            background-size:contain;
-            width:750px;
-            text-align: center;
-            background-repeat:no-repeat
-        }
-        #mob-info-3{
-            background-image: url("https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/18/G3iUXiAek5A6RauP.jpg?x-amz-process=image/format,webp/quality,Q_80");
-            background-size: 100% 100%;
+        #mob-info-1>img {
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
 
-            width:500px;
-           text-align: center; 
-            vertical-align: middle;
-            background-repeat:no-repeat
+
+
+
         }
-        #mob-info-4{
-            background-image: url("https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/18/Yh1CjQwItQYTGlPV.jpg?x-amz-process=image/format,webp/quality,Q_80");
-            background-size:contain;
-            width:750px;
-            text-align: center;
-            background-repeat:no-repeat
+
+        #mob-info-2>img {
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
         }
-        .img-info-2{
+
+        #mob-info-3>img {
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+
+        }
+
+        #mob-info-4>img {
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+
+        }
+
+        .img-info-2 {
             margin: auto;
-            width:95%;
-            height: 700px;
-            border: 2px solid rgb(41, 53, 219);
+            margin-top: 20px;
+            width: 97%;
+            height: 300px;
+            /* border: 2px solid rgb(41, 53, 219); */
             display: flex;
             justify-content: space-between;
         }
-        .img-info-2>div:nth-child(1){
-            width:750px;
-            height: 700px;
-            border: 1px solid wheat;
-          
+
+        .img-info-2>div:nth-child(1) {
+            width: 58%;
+            height: 300px;
+            /* border: 1px solid wheat; */
+
+
 
         }
-        #tab-info-1{
-            background-image: url("https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/18/CUA67BldmqGpmjis.jpg?x-amz-process=image/format,webp/quality,Q_80");
-            background-size:100% 100%;
-            width:750px;
-            height: 700px;
+
+        .img-info-2>div:nth-child(2) {
+            width: 40%;
+            height: 300px;
+            /* border: 1px solid wheat; */
+
+
+        }
+
+        #tab-info-1>img {
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+
+        }
+
+        #tab-info-2>img {
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+
+        }
+
+        #img-info>div:nth-child(4) {
             text-align: center;
-            vertical-align: middle;
-            background-repeat:no-repeat
+            margin-top: 20px;
+            padding-bottom: 10px;
         }
-        .img-info-2>div:nth-child(2){
-            width:500px;
-            height: 600px;
-            border: 1px solid wheat;
-            background-color: #010103;
 
+        #img-info>div:nth-child(3) {
+            margin-top: 20px;
         }
-        @media screen and (max-width:1025px){
-            #main-div{
+
+        #faq {
+            width: 90%;
+            margin: auto;
+            margin-top: 30px;
+        }
+        ul{
+            margin-top: 30px;
+        }
+        li{
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+         h3{
+            font-size: 18px;
+            font-weight: 500;
+            color: #3d4042;
+         }
+         #feedback-link{
+            margin-top:60px;
+            
+         }
+         #feedback-link>p{
+            padding-top: 20px;
+         }
+         
+
+        @media screen and (max-width:1025px) {
+            #main-div {
                 flex-direction: column;
             }
-            #main-div>div{
-                width:100%;
+
+            #main-div>div {
+                width: 100%;
+            }
+
+        }
+        @media screen and (max-width:1310px) {
+            #img-info{
+                height: auto;
+            }
+            #img-info>div:nth-child(3)
+            {
+                flex-direction: column;
+            }
+            #img-info>div:nth-child(4) {
+            text-align: center;
+            margin-top: 350px;
+            padding-bottom: 10px;
+        }
+            #faq{
+                margin-top:100px;
             }
             
         }
+        @media screen  and (max-width:650px)
+        {
+            #img-info>div:nth-child(2){
+                display: none;
+            }
+            #img-info>div:nth-child(3){
+                display: none;
+            }
+            #img-info>div:nth-child(4) {
+            text-align: center;
+            margin-top: 200px;
+            padding-bottom: 10px;
+        }
+        
+        }
     </style>
-       <script src="https://kit.fontawesome.com/aaa593ce74.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/aaa593ce74.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="oneplus-open">
         <div id="main-div">
-            <div><img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/Q6eo7MrmZImAofog.png?x-amz-process=image/format,webp/quality,Q_80" alt=""></div>
+            <div><img
+                    src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/Q6eo7MrmZImAofog.png?x-amz-process=image/format,webp/quality,Q_80"
+                    alt=""></div>
             <div id="main-div-info">
                 <div>
                     <p>OnePlus Open</p>
                     <p>Emerald Dusk 16 GB RAM + 512 GB Storage</p>
-                      <p> 6% off</p> 
-                      <p>₹139,999</p>
-                       <div><p> M.R.P. ₹ <del>149,999</del>
-                         (inclusive of all taxes)</p> <div>see Offers <i class="fa-solid fa-arrow-down"></i></div></div>
-                     <hr>
-                     <p>Color: Emerald Dusk</p>
-                     <div><div><div id="gray-color"></div></div><div><div id="black-color"></div></div></div>
-                     <p>ROM</p>
-                     <div>16 GB RAM + 512 GB Storage</div>
+                    <p> 6% off</p>
+                    <p>₹139,999</p>
+                    <div>
+                        <p> M.R.P. ₹ <del>149,999</del>
+                            (inclusive of all taxes)</p>
+                        <div>see Offers <i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <hr>
+                    <p>Color: Emerald Dusk</p>
+                    <div>
+                        <div>
+                            <div id="gray-color"></div>
+                        </div>
+                        <div>
+                            <div id="black-color"></div>
+                        </div>
+                    </div>
+                    <p>ROM</p>
+                    <div>16 GB RAM + 512 GB Storage</div>
                 </div>
             </div>
         </div>
         <div id="img-info">
             <div class="img-info-1">
                 <div id="mob-info-1">
+                    <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/D9Yl3oxdQOAGqAUs.jpg?x-amz-process=image/format,webp/quality,Q_80"
+                        alt="">
+                </div>
+                <div id="mob-info-2">
+                    <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/QiLBFQwYg4cUX5rj.jpg?x-amz-process=image/format,webp/quality,Q_80"
+                        alt="">
 
                 </div>
-                <div id="mob-info-2"></div>
-           
+
             </div>
             <div class="img-info-2">
                 <div id="tab-info-1">
+                    <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/nSd4PsLyTRDKsAXO.jpg?x-amz-process=image/format,webp/quality,Q_80"
+                        alt="">
 
                 </div>
-                <div id="tab-info-2"></div>
+                <div id="tab-info-2">
+                    <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/L7H3xZAv9mjW1isS.jpg?x-amz-process=image/format,webp/quality,Q_80"
+                        alt="">
+                </div>
             </div>
             <div class="img-info-1">
                 <div id="mob-info-3">
-
+                    <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/k5Dxky01qRWbLwNd.jpg?x-amz-process=image/format,webp/quality,Q_80"
+                        alt="">
                 </div>
-                <div id="mob-info-4"></div>
-    
+                <div id="mob-info-4">
+                    <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/5AiDVzj1oXftuPD0.jpg?x-amz-process=image/format,webp/quality,Q_80"
+                        alt="">
+                </div>
+
             </div>
-            <div class="img-info-2">
-                <div id="tab-info-3">
+            <div>
+                <p>Learn More ></p>
+            </div>
 
-                </div>
-                <div id="tab-info-4"></div>
+        </div>
+        <div id="faq">
+            <div><h1>FAQ</h1></div>
+            <div>
+                <ul>
+                    <li><h3>What payment method I could choose?</h3><i class="fa-solid fa-plus"></i></li>
+                    <hr>
+                    <li><h3>When will I receive my order?</h3><i class="fa-solid fa-plus"></i></li>
+                    <hr>
+                    <li><h3>What is the warranty policy for the OnePlus Open device?</h3><i class="fa-solid fa-plus"></i></li>
+                    <hr>
+                    <li><h3>How can I find a service center in India?</h3><i class="fa-solid fa-plus"></i></li>
+                    <hr>
+                    <li><h3>After I have completed the online purchase, when can I pick up the product(s) in store?</h3><i class="fa-solid fa-plus"></i></li>
+                    <hr>
+                    <li><h3>What information is required for in-store pickup verification?</h3><i class="fa-solid fa-plus"></i></li>
+                   
+
+                </ul>
+
+            </div>
+            
+            <div id="feedback-link"> <hr>
+                <p>Did this page help you?
+               <a href="">Share your feedback</a> </p></div>
+        </div>
+
+        <div id="btn">
+            <div>
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
             </div>
         </div>
-       
 
 
     </div>
-   
+
 </body>
+
 </html>
