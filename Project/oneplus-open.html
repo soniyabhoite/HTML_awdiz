@@ -18,7 +18,7 @@
         }
 
         #main-div {
-            width: 100%;
+            max-width: 100%;
             display: flex;
             justify-content: space-between;
             /* border:2px solid red; */
@@ -308,10 +308,13 @@
             font-size: 15px;
             border: none;
          }
+         
          #btn>div{
             padding-left: 800px;
+            position: fixed;
+            bottom: 0;
          }
-           #mob-info-1>div{
+           /*#mob-info-1>div{
             width:250px;
             position: absolute;
             top: 600px;
@@ -325,12 +328,108 @@
            }
            #mob-info-1>div>p:nth-child(2)
            {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 500;
             margin-top: 15px;
             color: #bdb6b6;
            }
-         
+           #mob-info-2>div
+           {
+            width:300px;
+            position: absolute;
+            top: 600px;
+            left: 600px;
+            color: #e7e1e1;
+
+           }
+           #mob-info-2>div>p:nth-child(1)
+           {
+            font-size: 25px;
+            font-weight: 500;
+           }
+           #mob-info-2>div>p:nth-child(2)
+           {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 15px;
+            color: #bdb6b6;
+           }
+           #mob-info-3>div{
+            width:250px;
+            position: absolute;
+            top: 1250px;
+            left: 50px;
+            color: #e7e1e1;
+           }
+           #mob-info-3>div>p:nth-child(1)
+           {
+            font-size: 25px;
+            font-weight: 500;
+           }
+           #mob-info-3>div>p:nth-child(2)
+           {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 15px;
+            color: #bdb6b6;
+           }
+           #mob-info-4>div{
+            width:280px;
+            position: absolute;
+            top: 1230px;
+            left: 600px;
+            color: #131212;
+           }
+           #mob-info-4>div>p:nth-child(1)
+           {
+            font-size: 25px;
+            font-weight: 500;
+           }
+           #mob-info-4>div>p:nth-child(2)
+           {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 15px;
+            color: #242222;
+           }
+           #tab-info-1>div{
+            width:250px;
+            position: absolute;
+            top: 900px;
+            left: 50px;
+            color: #131212;
+           }
+           #tab-info-1>div>p:nth-child(1)
+           {
+            font-size: 25px;
+            font-weight: 500;
+           }
+           #tab-info-1>div>p:nth-child(2)
+           {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 15px;
+            color: #242222;
+           }
+           #tab-info-2>div{
+            width:200px;
+            position: absolute;
+            top: 900px;
+            left: 840px;
+            color: #131212;
+           }
+           #tab-info-2>div>p:nth-child(1)
+           {
+            font-size: 25px;
+            font-weight: 500;
+           }
+           #tab-info-2>div>p:nth-child(2)
+           {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 15px;
+            color: #242222;
+           }*/
 
         @media screen and (max-width:1025px) {
             #main-div {
@@ -342,6 +441,7 @@
             }
 
         }
+        
         @media screen and (max-width:1310px) {
             #img-info{
                 height: auto;
@@ -358,6 +458,11 @@
             #faq{
                 margin-top:100px;
             }
+            #btn>div{
+            padding-left: 500px;
+            position: fixed;
+            bottom: 0;
+         }
             
         }
         @media screen  and (max-width:650px)
@@ -373,6 +478,22 @@
             margin-top: 200px;
             padding-bottom: 10px;
         }
+
+        #btn>div>button{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width:300px;
+            height:45px;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            border: none;
+         }
+         #btn>div{
+           
+            position: fixed;
+            bottom: 0;
+         }
         
         }
     </style>
@@ -414,14 +535,19 @@
         <div id="img-info">
             <div class="img-info-1">
                 <div id="mob-info-1">
-                    <div>
+                    <!-- <div>
                         <p>Light and compact. It's Pro sizing on a fold.</p>
                         <p>Lighter than any Fold at 239 grams, weighs just like a Pro Max. The Open is all sized up for a familiar hold.</p>
-                    </div>
+                    </div> -->
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/D9Yl3oxdQOAGqAUs.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
                 </div>
                 <div id="mob-info-2">
+
+                    <!-- <div>
+                        <p>Extraordinary materials blend the best of both.</p>
+                        <p>Titanium alloy, carbon fiber, and more. Built to the hilt with aerospace-grade materials up to 4 times stronger than surgical-grade stainless steel.</p>
+                    </div> -->
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/QiLBFQwYg4cUX5rj.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
 
@@ -430,28 +556,46 @@
             </div>
             <div class="img-info-2">
                 <div id="tab-info-1">
+                    <!-- <div>
+                        <p>ProXDR displays, in and out.</p>
+                        <p>2K resolution, 120Hz and peak brightness of 2800 nits, both AMOLED displays are perfected for Dolby Vision. Brighter and sharper than your average Pro phone or tablet.
+                        </p>
+                    </div> -->
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/nSd4PsLyTRDKsAXO.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
 
                 </div>
                 <div id="tab-info-2">
+                    <!-- <div>
+                        <p>Game-changing multitasking</p>
+                        <p> With Open Canvas on OxygenOS13.2, extend split-screen apps and flow beyond the display. The screen giant upsizes your possibilities with more real estate.
+                        </p>
+                    </div> -->
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/L7H3xZAv9mjW1isS.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
                 </div>
             </div>
             <div class="img-info-1">
                 <div id="mob-info-3">
+                    <!-- <div>
+                        <p>Hasselblad Camera for Fold.</p>
+                        <p>48MP SONY LYT-T808 "Pixel Stacked" Sensor. Light up the night with dynamic range and light intake on par with traditional IMX 1-inch smartphone sensors.</p>
+                    </div> -->
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/k5Dxky01qRWbLwNd.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
                 </div>
                 <div id="mob-info-4">
+                    <!-- <div>
+                        <p>OnePlus Fast and Smooth. More power than you can handle.</p>
+                        <p>Snapdragon® 8 Gen 2. 16GB LPDDR5X RAM accelerated by RAM-Vita. 512GB UFS4.0 ROM. 4805 mAh battery. 67W Charging.</p>
+                    </div> -->
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/5AiDVzj1oXftuPD0.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
                 </div>
 
             </div>
             <div>
-                <p>Learn More ></p>
+                <p style="font-weight: 550;">Learn More ></p>
             </div>
 
         </div>
