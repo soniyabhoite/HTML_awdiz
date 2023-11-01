@@ -314,11 +314,11 @@
             position: fixed;
             bottom: 0;
          }
-           /*#mob-info-1>div{
-            width:250px;
+           #mob-info-1>div{
+            width:19%;
             position: absolute;
-            top: 600px;
-            left: 50px;
+            top: 95%;
+            left: 3%;
             color: #e7e1e1;
            }
            #mob-info-1>div>p:nth-child(1)
@@ -335,10 +335,10 @@
            }
            #mob-info-2>div
            {
-            width:300px;
+            width:20%;
             position: absolute;
-            top: 600px;
-            left: 600px;
+            top: 95%;
+            left: 45%;
             color: #e7e1e1;
 
            }
@@ -355,10 +355,10 @@
             color: #bdb6b6;
            }
            #mob-info-3>div{
-            width:250px;
+            width:20%;
             position: absolute;
-            top: 1250px;
-            left: 50px;
+            top: 200%;
+            left: 3%;
             color: #e7e1e1;
            }
            #mob-info-3>div>p:nth-child(1)
@@ -374,10 +374,10 @@
             color: #bdb6b6;
            }
            #mob-info-4>div{
-            width:280px;
+            width:20%;
             position: absolute;
-            top: 1230px;
-            left: 600px;
+            top: 200%;
+            left: 45%;
             color: #131212;
            }
            #mob-info-4>div>p:nth-child(1)
@@ -393,10 +393,10 @@
             color: #242222;
            }
            #tab-info-1>div{
-            width:250px;
+            width:20%;
             position: absolute;
-            top: 900px;
-            left: 50px;
+            top: 145%;
+            left:5%;
             color: #131212;
            }
            #tab-info-1>div>p:nth-child(1)
@@ -412,10 +412,10 @@
             color: #242222;
            }
            #tab-info-2>div{
-            width:200px;
+            width:19%;
             position: absolute;
-            top: 900px;
-            left: 840px;
+            top: 145%;
+            left: 60%;
             color: #131212;
            }
            #tab-info-2>div>p:nth-child(1)
@@ -429,20 +429,9 @@
             font-weight: 500;
             margin-top: 15px;
             color: #242222;
-           }*/
+           }
 
-        @media screen and (max-width:1025px) {
-            #main-div {
-                flex-direction: column;
-            }
-
-            #main-div>div {
-                width: 100%;
-            }
-
-        }
-        
-        @media screen and (max-width:1310px) {
+            @media screen and (max-width:1310px) {
             #img-info{
                 height: auto;
             }
@@ -450,6 +439,24 @@
             {
                 flex-direction: column;
             }
+              #mob-info-1>div{
+            width:30%;
+            
+            position: absolute;
+            top: 60%;
+            left: 3%;
+            color: #e7e1e1;
+           }
+            #mob-info-2>div
+           {
+            width:20%;
+            position: absolute;
+            top: 60%;
+            left: 45%;
+            color: #e7e1e1;
+
+           }
+         
             #img-info>div:nth-child(4) {
             text-align: center;
             margin-top: 350px;
@@ -465,6 +472,65 @@
          }
             
         }
+        @media screen and (max-width:1025px) {
+            #main-div {
+                flex-direction: column;
+            }
+
+            #main-div>div {
+                width: 100%;
+            }
+            
+              #mob-info-1>div{
+            width:30%;
+            
+            position: absolute;
+            top: 220%;
+            left: 3%;
+            color: #e7e1e1;
+           }
+             #mob-info-2>div
+           {
+            width:20%;
+            position: absolute;
+            top: 220%;
+            left: 45%;
+            color: #e7e1e1;
+
+           }
+            #mob-info-3>div{
+            width:20%;
+            position: absolute;
+            top: 350%;
+            left: 3%;
+            color: #e7e1e1;
+           }
+            #mob-info-4>div{
+            width:20%;
+            position: absolute;
+            top: 410%;
+            left: 3%;
+            color: #131212;
+           }
+            #tab-info-1>div{
+            width:20%;
+            position: absolute;
+            top: 280%;
+            left:5%;
+            color: #131212;
+           }
+            #tab-info-2>div{
+            width:20%;
+            position: absolute;
+            top: 280%;
+            left:60%;
+            color: #131212;
+           }
+
+
+        }
+        
+       
         @media screen  and (max-width:650px)
         {
             #img-info>div:nth-child(2){
@@ -494,7 +560,40 @@
             position: fixed;
             bottom: 0;
          }
+
+           
+          
         
+        }
+        
+        @media  screen and (min-width:350px ) and (max-width:750px) {
+
+              #mob-info-2>div
+           {
+            width:40%;
+            position: absolute;
+            top: 220%;
+            left: 45%;
+            color: #e7e1e1;
+
+           }
+           #mob-info-4>div{
+            width:30%;
+            position: absolute;
+            top: 410%;
+            left: 3%;
+            color: #131212;
+           }
+             
+        }
+         @media  screen and (max-width:349px ) {
+             #mob-info-1>div>p:nth-child(2){
+                 display: none; 
+             }
+             #mob-info-2>div>p:nth-child(2){
+                 display: none; 
+             }
+          
         }
     </style>
     <script src="https://kit.fontawesome.com/aaa593ce74.js" crossorigin="anonymous"></script>
@@ -535,19 +634,19 @@
         <div id="img-info">
             <div class="img-info-1">
                 <div id="mob-info-1">
-                    <!-- <div>
+                     <div>
                         <p>Light and compact. It's Pro sizing on a fold.</p>
                         <p>Lighter than any Fold at 239 grams, weighs just like a Pro Max. The Open is all sized up for a familiar hold.</p>
-                    </div> -->
+                    </div> 
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/D9Yl3oxdQOAGqAUs.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
                 </div>
                 <div id="mob-info-2">
 
-                    <!-- <div>
+                     <div>
                         <p>Extraordinary materials blend the best of both.</p>
                         <p>Titanium alloy, carbon fiber, and more. Built to the hilt with aerospace-grade materials up to 4 times stronger than surgical-grade stainless steel.</p>
-                    </div> -->
+                    </div> 
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/QiLBFQwYg4cUX5rj.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
 
@@ -556,39 +655,39 @@
             </div>
             <div class="img-info-2">
                 <div id="tab-info-1">
-                    <!-- <div>
+                     <div>
                         <p>ProXDR displays, in and out.</p>
                         <p>2K resolution, 120Hz and peak brightness of 2800 nits, both AMOLED displays are perfected for Dolby Vision. Brighter and sharper than your average Pro phone or tablet.
                         </p>
-                    </div> -->
+                    </div> 
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/nSd4PsLyTRDKsAXO.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
 
                 </div>
                 <div id="tab-info-2">
-                    <!-- <div>
+                    <div>
                         <p>Game-changing multitasking</p>
                         <p> With Open Canvas on OxygenOS13.2, extend split-screen apps and flow beyond the display. The screen giant upsizes your possibilities with more real estate.
                         </p>
-                    </div> -->
+                    </div> 
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/L7H3xZAv9mjW1isS.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
                 </div>
             </div>
             <div class="img-info-1">
                 <div id="mob-info-3">
-                    <!-- <div>
+                     <div>
                         <p>Hasselblad Camera for Fold.</p>
                         <p>48MP SONY LYT-T808 "Pixel Stacked" Sensor. Light up the night with dynamic range and light intake on par with traditional IMX 1-inch smartphone sensors.</p>
-                    </div> -->
+                    </div> 
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/k5Dxky01qRWbLwNd.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
                 </div>
                 <div id="mob-info-4">
-                    <!-- <div>
+                    <div>
                         <p>OnePlus Fast and Smooth. More power than you can handle.</p>
                         <p>Snapdragon® 8 Gen 2. 16GB LPDDR5X RAM accelerated by RAM-Vita. 512GB UFS4.0 ROM. 4805 mAh battery. 67W Charging.</p>
-                    </div> -->
+                    </div> 
                     <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202310/17/5AiDVzj1oXftuPD0.jpg?x-amz-process=image/format,webp/quality,Q_80"
                         alt="">
                 </div>
