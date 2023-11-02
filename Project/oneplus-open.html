@@ -22,8 +22,13 @@
             display: flex;
             justify-content: space-between;
             /* border:2px solid red; */
+            /* overflow-y: scroll; */
+
 
         }
+        ::-webkit-scrollbar {
+  width: 2px;
+}
 
         #main-div>div {
             width: 50%;
@@ -33,6 +38,8 @@
         }
 
         #main-div>div:nth-child(1) {
+            position: -webkit-sticky;
+            top:0;
             background-color: #F4F4F4;
         }
 
@@ -41,12 +48,18 @@
             width: 100%;
             height: 100%;
         }
+         /* #main-div-info{
+            overflow: auto;
+            
+            
+        }*/
 
         #main-div-info>div {
             width: 90%;
             height: 100%;
             margin: auto;
             margin-top: 50px;
+            
         }
 
         #main-div-info>div:nth-child(1)>p:nth-child(1) {
@@ -155,6 +168,13 @@
             color: #939393;
             margin-top: 20px;
         }
+        /*#main-div-info>div:nth-child(2)>img
+        {
+            width:600px;
+            height: 500px;
+            border:1px solid blue;
+            object-fit: cover;
+        }*/
 
         #img-info {
             max-width: 100%;
@@ -432,6 +452,7 @@
            }
 
             @media screen and (max-width:1310px) {
+
             #img-info{
                 height: auto;
             }
@@ -475,6 +496,7 @@
         @media screen and (max-width:1025px) {
             #main-div {
                 flex-direction: column;
+                /* flex-wrap: wrap; */
             }
 
             #main-div>div {
@@ -533,6 +555,9 @@
        
         @media screen  and (max-width:650px)
         {
+            #main-div{
+                flex-wrap: wrap;
+            }
             #img-info>div:nth-child(2){
                 display: none;
             }
@@ -586,7 +611,11 @@
            }
              
         }
-         @media  screen and (max-width:349px ) {
+         @media  screen and (max-width:349px ) 
+         {
+             #main-div{
+                flex-wrap: wrap;
+             }
              #mob-info-1>div>p:nth-child(2){
                  display: none; 
              }
@@ -629,7 +658,9 @@
                     <p>ROM</p>
                     <div>16 GB RAM + 512 GB Storage</div>
                 </div>
-            </div>
+                 <!-- <div>
+                    <img src="https://image01-in.oneplus.net/india-oneplus-statics-file/epb/202309/26/rzpeyciHl6SPEtmE.jpg" alt=""></div> -->
+            </div> 
         </div>
         <div id="img-info">
             <div class="img-info-1">
