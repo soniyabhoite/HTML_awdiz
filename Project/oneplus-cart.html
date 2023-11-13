@@ -49,7 +49,7 @@
         }
         .cart-item
         {
-            border:2px solid blue;
+           /* border:2px solid blue;*/
             background-color: #FFFFFF;
             width:95%;
             margin:auto;
@@ -58,21 +58,72 @@
         }
         .cart-item>div{
             width:90%;
-            border:2px solid blue;
+          /*  border:2px solid blue;*/
             display:flex;
             justify-content: space-between;
             margin: auto;
+            padding-top: 20px;
             margin-top: 10px;
         }
         .cart-item>div>div{
-            border:2px solid green;
+          /*  border:2px solid green;*/
             width:auto;
         }
         .cart-item>div>div>img{
             width:100px;
             height: 100px;
         }
-
+        .cart-item>div>div:nth-child(4)
+        {
+            width:100px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .cart-item>div>div:nth-child(4)>div{
+            width:33px;
+            height: 20px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        #c-btn{
+            margin: auto; 
+            width: 95%;
+            background-color: #FFFFFF;
+            height: 60px;
+            margin-left: 33px;
+            margin-top: 20px;
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            /* top:900px; */
+            bottom: 0;  
+           
+         }
+         #c-btn>div:nth-child(1)
+         {
+            padding-left: 800px;
+         }
+          #c-btn>div{
+           
+            width:250px;
+            font-size: 22px;
+            /* border: 2px solid green; */
+             
+         } 
+        #c-btn>div>button{
+        margin-left: 10px;
+            /* margin-top: 30px; */
+            margin-bottom: 30px;
+            width:230px;
+            height:55px;
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            border: none;
+         }
+         
+         
     </style>
     <script src="https://kit.fontawesome.com/aaa593ce74.js" crossorigin="anonymous"></script>
 </head>
@@ -88,11 +139,11 @@
         <div class="cart-item">
             <div>
                 <div><img src="https://image01-in.oneplus.net/ebp/202209/13/1-m00-41-f3-cpgm7mmgpvialsseaanibllig9i197.png" alt=""></div>
-                <div><p>
+                <div><p style="font-size: 20px;"  >
                     OnePlus 18W Freezing Point Phone Cooler PCV02 Freezing White</p>
                     <p>White</p>
                 </div>
-                <div>
+                <div style="font-size: 20px;">
                     <p>₹3,299</p>
                     <p><del>₹3,999</del></p>
                 </div>
@@ -104,8 +155,49 @@
 
             </div>
         </div>
-        <div class="cart-item"><p></p></div>
-        <div class="cart-item"><p></p></div>
+        <div class="cart-item">
+            <div>
+                <div><img src="https://oasis.opstatics.com/content/dam/oasis/page/2023/nav/green-pc2.png" alt=""></div>
+                <div><p style="font-size: 20px;"  >
+                    OnePlus 18W Freezing Point Phone Cooler PCV02 Freezing White</p>
+                    <p>White</p>
+                </div>
+                <div style="font-size: 20px;">
+                    <p>₹139,999</p>
+                    <p><del>₹149,999</del></p>
+                </div>
+                <div>
+                    <div>-</div><div>1</div><div>+</div>
+                </div>
+                <div><i class="fa-solid fa-xmark"></i></div>
+
+
+            </div>
+        </div>
+        <div class="cart-item">
+            <div>
+                <div><img src="https://image01.oneplus.net/ebp/202203/30/1-m00-38-29-rb8bwmjeozwafonjaafh-6g4fpa781.png" alt=""></div>
+                <div><p style="font-size: 20px;"  >
+                    OnePlus 18W Freezing Point Phone Cooler PCV02 Freezing White</p>
+                    <p>White</p>
+                </div>
+                <div style="font-size: 20px;">
+                    <p>₹9,999</p>
+                    <p><del>₹13,999</del></p>
+                </div>
+                <div>
+                    <div>-</div><div>1</div><div>+</div>
+                </div>
+                <div><i class="fa-solid fa-xmark"></i></div>
+
+
+            </div>
+        </div>
+        <div id="c-btn">
+           <div> <p>₹153,297</p></div>
+           <div><button style="background-color: red;">CheckOut(3)</button></div>
+
+        </div>
 
     </div>
 </body>
