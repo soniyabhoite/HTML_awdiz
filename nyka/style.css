@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.mt-8 {
+    margin-top: 84px;
+}
+
+/* Navbar */
+
+.navbar {
+    height: 65px;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.nav-link {
+    font-family: hel-med;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.logo {
+    width: 59px;
+    transform: scale(1.33);
+}
+
+input {
+    font-family: 'FontAwesome';
+    max-width: 180px;
+    background-color: #f5f5f5;
+}
+
+.top-t {
+    font-size: 12px;
+    font-family: hel-bold;
+}
+
+/* Sale */
+
+.top-text {
+    width: 200%;
+    animation: go 8s ease-in-out infinite;
+    z-index: -1;
+}
+
+.boom {
+    overflow: hidden;
+}
+
+.one {
+    width: 100%;
+}
+
+.two {
+    width: 100%;
+}
+
+@keyframes go {
+    0% {
+        transform: translateX(0);
+    }
+
+    48% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    98% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Hero */
+
+.hero-btn {
+    background-color: black;
+    color: white;
+    padding: 6px 20px;
+}
+
+.hero-btn:hover {
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+/* Carousel */
+
+.maou {
+    overflow: hidden;
+}
+
+.carousel {
+    overflow: auto;
+}
+
+.bhau {
+    gap: 20px;
+}
+
+.bhau img {
+    width: 30%;
+}
+
+.bhau .div {
+    width: 30%;
+}
+
+@media (max-width: 756px) {
+    .bhau img {
+        width: 80%;
+    }
+    .bhau .div {
+        width: 80%;
+    }
+}
+
+.nav-btns i {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.nav-btn-2 {
+    background-color: rgb(204, 208, 212);
+}
+
+.nav-btn {
+    background-color: rgba(204, 208, 212, 0.452);
+}
+
+/* Featured */
+
+.feature {
+    height: 700px;
+}
+
+.feature-btn {
+    padding: 6px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.feature-btn:hover {
+    background-color: rgb(116, 113, 113);
+    color: black;
+
+}
+
+.feature-1 {
+    background-image: url('../images/home/174de3ec-30e4-48b4-945a-ce53ebec1bfc.webp');
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+}
+
+.feature-2 {
+    background-image: url('../images/home/nike-just-do-it.jpg');
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Product Carousel */
+
+@media screen and (min-width: 576px) {
+    .carousel-inner {
+        display: flex;
+        gap: 20px;
+        overflow: auto;
+    }
+
+    .carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100% / 3);
+    }
+}
+
+.carousel-inner {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.iconic {
+    overflow: auto;
+}
+
+.sneakers {
+    width: 149%;
+}
+
+@media screen and (min-width:400px) and (max-width:1500px) {
+    .sneakers {
+        width: 400%;
+    }
+}
+
+@media (max-width:400px) {
+    .sneakers {
+        width: 600%;
+    }
+}
+
+.sneaker {
+    width: 300px;
+}
+
+.sneaker img {
+    width: 100%;
+}
+
+.blogs {
+    width: 149%;
+}
+
+.blog-img {
+    width: 467px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.dob {
+    gap: 20px;
+}
+
+.blog-text {
+    height: 100px;
+}
+
+hr {
+    opacity: 0.1;
+}
+
+@media (max-width: 767px) {
+    .blogs {
+        width: 100%; 
+    }
+
+    .blog-img {
+        width: 35%;     
+        height: auto;
+    }
+
+    .blog-img img {
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    .dob {
+        gap: 10px; 
+        flex-direction: column; 
+    }
+
+    .blog-text {
+        height: auto;
+        margin-top: 10px;
+    }
+}
+
+.mens {
+    gap: 20px;
+}
+
+.men {
+    background-image: url('../images/home/5e9d47e4-d0af-4cfe-a40a-31729d9d2ce4.webp');
+    height: 540px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.women {
+    background-image: url('../images/home/963a54ad-6b91-4efe-8927-217656eb5240.webp');
+    height: 540px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.kids {
+    background-image: url('../images/home/e11e868d-e199-40fa-828c-a4e19c9b6943.webp');
+    height: 540px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.dan {
+    bottom: 30px;
+    left: 60px;
+    padding: 5px 20px;
+}
+
+@media (max-width: 400px) {
+    .dan {
+        bottom: 30px;
+        left: 30px;
+    }
+}
+
+.custom-scrollbar {
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+
+.custom-scrollbar {
+    overflow: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.footer {
+    background-color: #111111;
+}
+
+.foot {
+    font-size: 14px;
+}
+
+.soot {
+    font-size: 12px;
+}
+
+.social-icons {
+    gap: 20px;
+}
+
+.social-icons i {
+    font-size: 26px;
+    color: rgb(139, 134, 134);
+}
+
+@media (max-width:400px) {
+    .social-icons i {
+        margin: 10px 0;
+        font-size: 20px;
+        color: rgb(139, 134, 134);
+    }
+}
+
+.india i {
+    font-size: 12px;
+}
+
+.reserve {
+    color: #7e7e7e;
+    font-size: 12px;
+}
+
+.black {
+    background-color: #111111;
+}
+
+.accordion-item,
+.accordion-button,
+.accordion-body {
+    background-color: #111;
+    color: white;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #111;
+    color: white;
+}

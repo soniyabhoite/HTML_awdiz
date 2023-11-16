@@ -1,0 +1,51 @@
+@font-face {
+    font-family: hel-reg;
+    src: url('../Fonts/HelveticaNowText-Regular.woff');
+}
+.hel-reg {
+    font-family: hel-reg;
+}
+
+@font-face {
+    font-family: hel-med;
+    src: url('../Fonts/HelveticaNowText-Medium.woff');
+}
+.hel-med {
+    font-family: hel-med;
+}
+
+@font-face {
+    font-family: hel-light;
+    src: url('../Fonts/HelveticaNowText-Light.woff');
+}
+.hel-light {
+    font-family: hel-light;
+}
+
+@font-face {
+    font-family: hel-bold;
+    src: url('../Fonts/HelveticaNowText-Bold.woff');
+}
+.hel-bold {
+    font-family: hel-bold;
+}
+
+@font-face {
+    font-family: hel-black;
+    src: url('../Fonts/HelveticaNowText-Black.woff');
+}
+.hel-black {
+    font-family: hel-black;
+}
+
+@font-face {
+    font-family: hel-reg;
+    src: url('../Fonts/HelveticaNowText-Regular.woff');
+}
+.hel-reg {
+    font-family: hel-reg;
+}
+
+.small {
+    font-size: 12px;
+}
