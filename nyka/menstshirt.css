@@ -1,0 +1,70 @@
+#tshirt-info{
+    width:100%;
+    /* border:2px solid red; */
+    height: 700px;
+    
+}
+#tshirt-info>div:nth-child(1)
+{
+    /* border: 2px solid green; */
+    width:85%;
+    height: 92%;
+    margin: auto;
+    margin-top: 2.5%;
+    display: flex;
+    justify-content: space-between;
+}
+#small-img{
+    width:7%;
+    /* border: 2px solid red; */
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+}
+#small-img>div{
+    
+    margin: auto;
+    width:86%;
+    height: 11%;
+   
+    /* border:2px solid blue; */
+   
+}
+#small-img>div>img{
+    border-radius: 5%;
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+
+}
+#small-img>div:nth-child(2)
+{
+    border-radius: 5%;
+    background-position: center;
+    background-size:cover;
+    background-image: url('https://static.nike.com/a/videos/so_5.62/7337a30c-baa3-4a8e-b5b7-435e8e8c12c9/zion-t-shirt-4wVTdv.jpg');
+
+}
+#big-img{
+    width:39%;
+    height: 100%;
+    /* border: 2px solid red;  */
+    background-position: center;
+    background-size:cover;
+    background-image: url('https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/536f341d-0084-4f4d-961b-dc128feaa8fc/zion-t-shirt-4wVTdv.png');
+    border-radius: 3%;
+    
+}
+#big-img>img{
+  
+   
+    width:100%;
+    height: 100%;
+}
+#info{
+    width:50%;
+    border: 2px solid red;
+    height: 100%;
+}

@@ -26,13 +26,13 @@
 }
 
 .latest-1 {
-    background-image: url('../images/mens/asset\ 5.jpeg');
+    background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_700,c_limit/d606b526-8761-427a-b10a-9120a09016ff/men-s-shoes-clothing-accessories.png');
 }
 .latest-2 {
-    background-image: url('../images/mens/asset\ 6.jpeg');
+    background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_700,c_limit/df106896-703d-4536-81a3-c657de07d4be/men-s-shoes-clothing-accessories.png');
 }
 .latest-3 {
-    background-image: url('../images/mens/asset\ 7.jpeg');
+    background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_700,c_limit/d5cc87a0-722f-4be8-bbd9-527074780db2/men-s-shoes-clothing-accessories.png');
 }
 
 @media (max-width: 500px) {
