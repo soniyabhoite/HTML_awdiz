@@ -1,0 +1,82 @@
+.top-div{
+    height:700px;
+    background-image:url('https://scramblerducati.com/wp-content/uploads/2023/09/Scrambler-Icon-hero-homepage-desktop.jpg') ;
+    background-size: cover;
+   
+}
+body{
+    font-family: "SCR Ducati Style Regular",sans-serif ,young serif;
+}
+.t-logo{
+    font-size: 40px;
+}
+.t-logo>img{
+    
+    width: 150px;
+    height: 60px;
+}
+.nav-top-r{
+    color: white;
+    /* background-color: aqua; */
+}
+.fa-brands,.fa-solid{
+    color: white;
+    size: 40px;
+}
+.m-info{
+    font-size: 55px;
+    font-weight: 800;
+}
+.m-info-2{
+    font-size: 20px;
+}
+.hr1{
+     height:50px;
+    background-color:rgb(230, 178, 10);
+    
+}
+.b-img>img{
+    width:100%;
+    height: 250px;
+}
+.b-title{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.b-title2{
+    text-align: center;
+    font-size: 18px;
+}
+.b-title3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    color:#F9C102;
+}
+.d-btn-main{
+    text-align: center;
+}
+.d-btn>i{
+    color: black;
+}
+.d-btn{
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    width: 200px;
+    
+    
+}
+
+.land-joy{
+    height: 400px;
+    margin: auto;
+    width: 95%;
+    background-image: url('https://scramblerducati.com/wp-content/uploads/2023/11/Scrambler-icon-cover-kit-hero-1920x1080-1.png');
+background-size:cover;
+background-position: center;
+
+}
