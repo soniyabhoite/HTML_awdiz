@@ -1,6 +1,6 @@
 .top-div{
     height:700px;
-    background-image:url('https://scramblerducati.com/wp-content/uploads/2023/09/Scrambler-Icon-hero-homepage-desktop.jpg') ;
+    background-image:url('https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_16.jpg') ;
     background-size: cover;
     filter: brightness(98%);
    
@@ -14,8 +14,8 @@ body{
 }
 .t-logo>img{
     
-    width: 150px;
-    height: 60px;
+    width: 200px;
+    height: 100px;
 }
 .nav-top-r{
     color: white;
@@ -130,4 +130,19 @@ z-index: 1;
     height: 400px;
     width:100%;
     color: rgb(230, 228, 228);
+}
+.img-gal{
+    margin-left: 50px;
+    justify-content: space-between;
+}
+.img-gal>div>div{
+    height: 400px;
+    width:400px;
+}
+.img-gal>div>div>img{
+    object-fit: cover;
+    object-position: center;
+}
+.card-img{
+    height: 100%;
 }
