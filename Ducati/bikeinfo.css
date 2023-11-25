@@ -124,10 +124,16 @@ z-index: 1;
     width: 220px;
     max-width: 100%;
 }
+.separatorline1{
+    background: #ffc602;
+    height: 5px;
+    width: 80px;
+    max-width: 100%;
+}
 .footer{
     background-color: black;
     text-align: center;
-    height: 400px;
+    height: 450px;
     width:100%;
     color: rgb(230, 228, 228);
 }
@@ -145,4 +151,14 @@ z-index: 1;
 }
 .card-img{
     height: 100%;
+}
+
+.a-link{
+    color: gray;
+    font-size: 18px;
+    font-weight: 700;
+}
+.tbl-info{
+    font-size: 18px;
+    
 }

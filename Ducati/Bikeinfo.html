@@ -1,201 +1,390 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="./bikeinfo.css">
-   <script src="https://kit.fontawesome.com/aaa593ce74.js" crossorigin="anonymous"></script>
-    <title>Scrambler Ducati</title>
-  </head>
-  <body>
-    <div class="container-fluid top-div">
-        <nav class="navbar navbar-expand-sm bg-transparent navbar-dark sticky-top">
-            <div class="container-fluid">
-              <a class="navbar-brand t-logo" href="#"><img  src="https://scramblerducati.com/wp-content/uploads/2020/01/SCR-1100-Logo-Light.svg" alt=""></a>
-             </div>
-             <div class="container mt-6 ">
-                <ul class="nav justify-content-end nav-top-r">
-                    <li class="nav-item nav-top-r">
-                      <a class="nav-link" href="#"><img  class="rounded-circle" height="30px" width="32px" src="https://scramblerducati.com/wp-content/uploads/flags/hi.png" alt=""></a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link nav-top-r" href="#"><b>Hi</b></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link nav-top-r" href="#">|</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled nav-top-r" href="#" >\/</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f fa-xl "></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#"><i class="fa-brands fa-spotify fa-xl"></i></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#"><i class="fa-solid fa-plus fa-3x"></i></a>
-                      </li>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                  </ul>
-                
-             </div>
-         
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./bikeinfo.css">
+  <script src="https://kit.fontawesome.com/aaa593ce74.js" crossorigin="anonymous"></script>
+  <title>Scrambler Ducati</title>
+</head>
 
+<body>
+  <div class="container-fluid top-div">
+    <nav class="navbar navbar-expand-sm bg-transparent navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand t-logo" href="#"><img
+            src="https://scramblerducati.com/wp-content/uploads/2020/01/SCR-1100-Logo-Light.svg" alt=""></a>
+      </div>
+      <div class="container mt-6 ">
+        <ul class="nav justify-content-end nav-top-r">
+          <li class="nav-item nav-top-r">
+            <a class="nav-link" href="#"><img class="rounded-circle" height="30px" width="32px"
+                src="https://scramblerducati.com/wp-content/uploads/flags/hi.png" alt=""></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link nav-top-r" href="#"><b>Hi</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-top-r" href="#">|</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled nav-top-r" href="#">\/</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f fa-xl "></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i class="fa-brands fa-youtube fa-xl"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i class="fa-brands fa-spotify fa-xl"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i class="fa-solid fa-plus fa-3x"></i></a>
+          </li>
 
+        </ul>
 
-          </nav>
-
-            <div class="container-fluid mt-5  ">
-        <div class="col-lg-5 m-info-top  ">
-            <p>1100 Dark PRO <br>
-            </p>
-          </div>
-          <div class="col-lg-2 separatorline">
-           <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
-        </div>
-        <div class="col-lg-6 m-info-top2">
-            <p><b>Classy and black, essentially PRO.<br>
-                Live the road with the new 1100 Dark PRO. </b></p>
-        </div>
-        <div class=" d-btn-main-top"><button type="button" class="btn btn-warning d-btn">DISCOVER MORE &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></button></div>
-        
-          
-        
-    </div>
-
-         
-    </div>
-    <div class="container-fluid mt-4">
-        <div class="col-lg-5  m-info">
-            <p>Dark Suit
-           </p>
-          </div>
-          <div class="col-lg-2 separatorline">
-            <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
-         </div>
-        <div class="col-lg-5 m-info-2">
-            <p>Hit the road, ride with pride, enchant the streets with tons <br> of personality. New 1100 Dark PRO. Black heart, Scrambler <br> soul.</p>
-        </div>
-        
-
-          
-        
-    </div>
-
-    <div class="container-fluid mt-4">
-        <div class="col-lg-7  m-info">
-            <p>Act the #Joyvolution! </p>
-          </div>
-          <div class="col-lg-2 separatorline">
-            <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
-         </div>
-        <div class="col-lg-5 m-info-2">
-            <p>Fly with your Scrambler motorbike in the Land of Joy with <br>positivity, fun and a free-spirited attitude.</p>
-        </div>
-        
-
-          
-        
-    </div>
-    <div class="card-group">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
       </div>
 
-    <div class="row row-cols-2 row-cols-md-2 col-md-10 img-gal">
-        <div class="col-md-3 mb-4 ">
-          <div class="card">
-            <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_8.jpg" class="card-img" alt="...">
-           
-          </div>
+
+
+
+    </nav>
+
+    <div class="container-fluid mt-5  ">
+      <div class="col-lg-5 m-info-top  ">
+        <p>1100 Dark PRO <br>
+        </p>
+      </div>
+      <div class="col-lg-2 separatorline">
+        <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
+      </div>
+      <div class="col-lg-6 m-info-top2">
+        <p><b>Classy and black, essentially PRO.<br>
+            Live the road with the new 1100 Dark PRO. </b></p>
+      </div>
+      <div class=" d-btn-main-top"><button type="button" class="btn btn-warning d-btn">DISCOVER MORE
+          &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></button></div>
+
+
+
+    </div>
+
+
+  </div>
+  <div class="container-fluid mt-4">
+    <div class="col-lg-5  m-info">
+      <p>Dark Suit
+      </p>
+    </div>
+    <div class="col-lg-2 separatorline">
+      <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
+    </div>
+    <div class="col-lg-5 m-info-2">
+      <p>Hit the road, ride with pride, enchant the streets with tons <br> of personality. New 1100 Dark PRO. Black
+        heart, Scrambler <br> soul.</p>
+    </div>
+
+
+
+
+  </div>
+  <div class="card-group mt-5">
+    <div class="card" style="border: none;">
+      <h5 class="card-title mb-5 "><i class="fa-solid fa-plus fa-3x" style="color: #F9C102;"></i> </h5>
+      <p class="card-text mt-10"><h1><b>Riding comfort</b></h1></p>
+      <div class="col-lg-2 separatorline mt-5 mb-3">
+        <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
+      </div>
+
+      <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO-Riding-comfort.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+      
+        <p class="card-text">With tubular steel trellis frame with double top beam. Essential, like the Scrambler, it embraces the engine and is completed by an aluminium rear frame. It guarantees great agility in traffic as much as between hairpin bends in the mountains. Thanks to the wide handlebar, moving between urban obstacles is child’s play with the Scrambler, while the 1,514 mm wheelbase maximises stability, even at high speeds.</p>
+       
+      </div>
+    </div>
+    <div class="card" style="border: none;">
+      <h5 class="card-title mb-5"><i class="fa-solid fa-plus fa-3x" style="color: #F9C102;"></i></h5>
+      <p class="card-text mt-10"><h1><b>Brembo braking system</b></h1></p>
+      <div class="col-lg-2 separatorline mb-3">
+        <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
+      </div>
+
+      <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO-Brembo-braking-system.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        
+        <p class="card-text">The Scrambler 1100 Dark PRO is equipped with a Brembo braking system with ABS Cornering, which guarantees safety in all types of corners. At the front, a 320 mm diameter double disc has been fitted to two Brembo M 4.32B monobloc four-piston calipers with radial connection. At the rear there is a 245 mm disc on which a 34 mm single-piston caliper works. The ABS system has only one level of intervention and is not switchable.</p>
+     
+      </div>
+    </div>
+    <div class="card" style="border: none;">
+      <h5 class="card-title mb-5 "><i class="fa-solid fa-plus fa-3x" style="color: #F9C102;"></i></h5>
+      <p class="card-text mt-10"><h1><b>Riding comfort</b></h1></p>
+      <div class="col-lg-2 separatorline mb-3 mt-5">
+        <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
+      </div>
+
+      <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO-Innovative-lighting-.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+       
+        <p class="card-text">The light guide along the outer circumference, powered by an LED source that acts as a position light, is a DRL (Daytime Running Light), which allows the Scrambler 1100 Dark PRO to be easily recognizable even during the day. Taking inspiration from the tape that was applied to the headlights in the 1970s to preserve the light cluster, a black metal “X” was recreated inside the headlight. At the rear, the optical group is of the full LED type with a diffusion effect and uses a technology that is unique in the world of two wheels.</p>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-4">
+    <div class="col-lg-7  m-info">
+      <p>Act the #Joyvolution! </p>
+    </div>
+    <div class="col-lg-2 separatorline">
+      <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
+    </div>
+    <div class="col-lg-5 m-info-2">
+      <p>Fly with your Scrambler motorbike in the Land of Joy with <br>positivity, fun and a free-spirited attitude.</p>
+    </div>
+
+
+
+
+  </div>
+ 
+
+  <div class="row row-cols-2 row-cols-md-2 col-md-10 img-gal mt-5">
+    <div class="col-md-3 mb-4 ">
+      <div class="card">
+        <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_8.jpg" class="card-img"
+          alt="...">
+
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_10.jpg" class="card-img"
+          alt="...">
+
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_14.jpg" class="card-img"
+          alt="...">
+
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-2 row-cols-md-2 col-md-10 img-gal">
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_22.jpg" class="card-img"
+          alt="...">
+
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_16.jpg" class="card-img"
+          alt="...">
+
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_18.jpg" class="card-img"
+          alt="...">
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container-fluid mt-4">
+    <div class="col-lg-5  m-info">
+      <p>The Numbers </p>
+    </div>
+    <div class="col-lg-2 separatorline">
+      <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
+    </div>
+    <div class="col-lg-5 m-info-2">
+      <p>All the details and specifications you need.</p>
+    </div>
+
+
+
+
+  </div>
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-md-2"><a href="" class="a-link">ENGINE
+        </a>
+        <div class="col-lg-2 separatorline1">
+          <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
         </div>
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_10.jpg" class="card-img" alt="...">
-          
-          </div>
+      </div>
+      <div class="col-md-2"><a href="" class="a-link">TRANSMISSION
+        </a>
+        <div class="col-lg-2 separatorline1">
+          <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
         </div>
-        <div class="col-md-3 mb-4">
-            <div class="card">
-              <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_14.jpg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-2"><a href="" class="a-link">CHASSIS
+        </a>
+        <div class="col-lg-2 separatorline1">
+          <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
+        </div>
+      </div>
+      <div class="col-md-3"><a href="" class="a-link">DIMENSIONS AND WEIGHT
+        </a>
+        <div class="col-lg-2 separatorline1">
+          <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
+        </div>
+      </div>
+      <div class="col-md-2"><a href="" class="a-link">WARRANTY
+        </a>
+        <div class="col-lg-2 separatorline1">
+          <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5">
+      <table class="table table-hover tbl-info">
+
+        <tbody>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Type</td>
             
-          </div>
-          </div>
-          </div>
-          <div class="row row-cols-2 row-cols-md-2 col-md-10 img-gal">
-          <div class="col-md-3 mb-4">
-            <div class="card">
-              <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_22.jpg" class="card-img" alt="...">
+           <td>L-Twin, Desmodromic distribution, 2 valves per cylinder, air cooled</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Displacement</td>
 
-            </div>
-          </div>
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_16.jpg" class="card-img" alt="...">
-           
-          </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <img src="https://scramblerducati.com/wp-content/uploads/2020/11/1100-Dark-PRO_18.jpg" class="card-img" alt="...">
-           
-          </div>
-        </div>
+            <td>1,079 cc</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+          </tr>
+          <tr>
+<td></td>
+<td></td>
+            <td>Bore x stroke</td>
+
+            <td>98 x 71 mm</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Compression ratio</td>
+
+            <td>11:1  </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+          </tr>
+          <tr>
+<td></td>
+<td></td>
+            <td>Fuel injection
+            </td>
+
+            <td>Electronic fuel injection, Ø55 mm throttle body with full Ride by Wire (RbW)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+
+            <td>Consumption and emissions</td>
+
+            <td>5.2 l/100km - CO2 120 g/km</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer  mt-4 container-fluid">
+      <div class="pt-5"> <a class="navbar-brand t-logo" href="#"><img
+            src="https://cdn.cookielaw.org/logos/963dd109-397d-4db0-b3a4-de4e5a7c2fac/3d027745-3081-4984-9a39-6272e2ec1716/8b953b1b-a8a8-4c64-97d0-f97469dea1ca/Logo-Scrambler-Ducati-OneTrust.png"
+            alt=""></a></div>
+      <div class="row d-flex mt-5" style="padding-left: 400px;">
+        <div class="col-md-4 d-flex ">
+          <div class="col-md-6">Terms of use</div>
+          <div class="col-md-6">Cookie Policy</div>
+          <div class="col-md-6">Privacy Policy</div>
         </div>
       </div>
+      <div class="mt-5">
+        <p>Copyright © 2023 Ducati Motor Holding S.p.A. – A Sole Shareholder Company – A Company subject to the
+          <br> Management and Coordination activities of AUDI AG. All rights reserved. VAT 05113870967
+        </p>
+      </div>
+      <div class="d-flex col-12 justify-content-center mt-5">
+        <ul class="nav justify-content-center nav-top-r">
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#F9C102"><i class="fa-brands fa-facebook-f fa-2xl "
+                style="color:#F9C102"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i class="fa-brands fa-instagram fa-2xl"
+                style="color:#F9C102"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i class="fa-brands fa-twitter fa-2x" style="color:#F9C102"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i class="fa-brands fa-youtube fa-2x" style="color:#F9C102"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i class="fa-brands fa-spotify fa-2x" style="color:#F9C102"></i></a>
+          </li>
 
-      <div class="container-fluid mt-4">
-        <div class="col-lg-5  m-info">
-            <p>The Numbers </p>
-          </div>
-          <div class="col-lg-2 separatorline">
-            <!-- <b> <hr class="hr1" style="height: 6px;background-color:#f9c102;"></b> -->
-         </div>
-        <div class="col-lg-5 m-info-2">
-            <p>All the details and specifications you need.</p>
-        </div>
-        
 
-          
-        
+        </ul>
+
+
+      </div>
     </div>
-    
-    </body>
-    </html>
+
+</body>
+
+</html>
