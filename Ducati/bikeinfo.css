@@ -83,10 +83,26 @@ body{
     font-weight: 600;
     height: 40px;
     width: 200px;
+    margin-top:20px;
+    margin-left: 50px;
     
     
 }
-
+.input-email{
+    margin-left: 50px;
+    margin-top: 150px;
+}
+.input-email>input{
+    width: 500px;
+    height: 60px;
+    background-color:#F4F4F4;
+    
+}
+::placeholder {
+    color:black;
+    font-size: 18px;
+    padding-left: 20px;
+  }
 .land-joy{
     height: 400px;
     margin: auto;
@@ -161,4 +177,29 @@ z-index: 1;
 .tbl-info{
     font-size: 18px;
     
+}
+.subcribe{
+    width:98%;
+    height: 400px;
+    background-color: black;
+    margin: auto;
+    margin-top: 80px;
+    color: white;
+    
+}
+.subcribe-info{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.subcribe-info>p:nth-child(1){
+    font-weight: 800;
+    font-size: 40px;
+}
+.subcribe-info>p:nth-child(2)
+{
+    font-size: 20px;
+}
+.subcribe-info>p:nth-child(3){
+    margin-top: 30px;
+    font-size: 13px;
 }
