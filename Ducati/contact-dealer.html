@@ -42,6 +42,15 @@
             height: 50px;
             color: white;
         }
+        .chk{
+            width:30px;
+            height: 25px;
+            
+        }
+        .rbt{
+            width:22px;
+            height:22px;
+        }
     </style>
   </head>
   <body>
@@ -184,11 +193,11 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <input class="form-check-input rbt" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                     <label class="form-check-label" for="inlineRadio1">Yes</label>
                                   </div>
                                   <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <input class="form-check-input rbt" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                                     <label class="form-check-label" for="inlineRadio2">No</label>
                                   </div>
                                  </div>
@@ -197,9 +206,33 @@
                           <div class="col-md-12 text-center">
                             <h5>Consent for the processing of personal data
                             </h5>
-                          </div>    
+                          </div>  
+                          <div class="col-md-12 mt-4 ">
+                            <p>Before proceeding, please read our <a href="">privacy policy.</a><br>
+                            I have read and understood the privacy notice and I hereby consent to the processing of my personal data by Ducati Motor Holding S.p.A.: </p>
+                          </div> 
+                          <div class="col-md-12">
+                            <div class="row d-flex">
+                                <div class="col-md-1"><div class="form-check form-check-inline">
+                                    <input class="form-check-input chk" type="checkbox" id="inlineCheckbox1" value="option1">
+
+                                  </div></div>
+                                <div class="col-md-11">
+                                    for marketing activities via email (newsletters), telephone, text and multimedia messages, chats, banners on our websites and apps, instant messaging, social networks, and conventional mail
+                                </div>
+
+                                <div class="col-md-1 mt-5"><div class="form-check form-check-inline">
+                                    <input class="form-check-input chk" type="checkbox" id="inlineCheckbox1" value="option1">
+
+                                  </div></div>
+                                <div class="col-md-11 mt-5">
+                                    to understand your preferences through automated individual decision-making activities and better serve you
+                                </div>
+                            </div>
+                            
+                          </div> 
                         </div>
-                        <div class="row mt-4">
+                        <div class="row mt-5">
                             <div class="col-md-12 text-center">
                                 <button type="button" class="btn btn-send btn-danger ">SEND</button>
                             </div>    
