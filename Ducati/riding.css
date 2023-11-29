@@ -1,0 +1,78 @@
+.top-div{
+    width:100%;
+    height:600px;
+    background-size:cover;
+    background-position: center;
+    background-image: url('https://images.ctfassets.net/x7j9qwvpvr5s/53SG3375bSo3Z3qu8lmNTu/439f25166cd5b48e7bf0de1ccd7a6688/DRE-hero-1600x1000_5140.jpg?fm=webp&q=80');
+}
+.Dre{
+    position: absolute;
+    margin-top: 300px;
+}
+.fs11{
+    font-size:100px
+}
+.img-gal{
+    margin-left: 40px;
+    justify-content: space-between;
+}
+.img-gal>div>div{
+    height: 400px;
+    width:390px;
+}
+.img-gal>div>div>img{
+    object-fit: cover;
+    object-position: center;
+}
+.card-img{
+    height: 100%;
+}
+.Dre-img{
+    width:100%;
+    height:400px;
+}
+.btn-danger {
+    background-color: #F20000;
+    width:200px;
+    height: 50px;
+}
+.email{
+    width:500px;
+    height: 50px;
+}
+.nav-top-r{
+    color: white;
+    filter: brightness(100%);
+    /* background-color: aqua; */
+}
+.fa-brands,.fa-solid{
+    color: white;
+    size: 40px;
+}
+.img{
+    z-index: 0;
+}
+.text-over-img1 {
+    margin-left: 20px;
+    color: white;
+
+    z-index:1;
+    font-size: 1.0em;
+    margin-top: -80px;
+    }
+.text-over-img {
+    margin-left: 20px;
+    color: white;
+
+    z-index:1;
+    font-size: 1.3em;
+    margin-top: -70px;
+    }
+    .footer{
+        background-color: black;
+        text-align: center;
+        height: 400px;
+        width:100%;
+        color: rgb(230, 228, 228);
+    }
+   
