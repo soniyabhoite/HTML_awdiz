@@ -51,8 +51,32 @@ input[type=text] {
     background-color: #F0F0F0;
     height: 120px;
 }
+.card-img-top{
+    height: 300px;
+}
+.card-footer{
+    background-color: #FFFFFF;
+}
+.btn-group{
+    border: 1px solid black;
+    width:150px;
+    height: 60px;
+    border-radius: 5%;
+    margin-right: 10px;
+}
+.d-w{
+    width:60px;
+    height:60px;
+    border: 1px solid black;
+    background-color: #FFFFFF;
+}
+.d-b{
+    width:60px;
+    height:60px;
+    border: 1px solid black;
+    background-color: #1b1b1b;
 
-
+}
  @media screen and (max-width:576px) {
 
     .justify-content-center1{
@@ -66,6 +90,9 @@ input[type=text] {
     margin-top:20px;
     width:100%;
 
+}
+.footer{
+    height:200px ;
 }
 }
 @media screen and (min-width:577px) and (max-width:768px) {
@@ -84,6 +111,9 @@ input[type=text] {
     width:100%;
     
 
+}
+.footer{
+    height:200px ;
 }
 
 }
