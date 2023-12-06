@@ -17,6 +17,8 @@ body{
     height: 90px;
     width:100%;
     background-color: #FFFFFF;
+    justify-content: center;
+    padding-left: 200px;
 }
 .justify-content-center1{
     margin-left: 500px;
@@ -69,7 +71,7 @@ body{
 }
 
 input[type=text] {
-    background-color:#474747;
+    background-color:#f3eeee;
     color:#fcf8f8;
     width:410px;
     border: none;
